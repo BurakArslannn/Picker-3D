@@ -25,6 +25,8 @@ namespace RunTime.Signals
 
         public UnityAction<byte> onLevelInitialize = delegate { };
         public UnityAction onClearActiveLevel = delegate { };
+        public UnityAction onLevelSuccessful = delegate { };
+        public UnityAction onLevelFailed = delegate { };
         public UnityAction onNextlevel = delegate { };
         public UnityAction onRestartLevel = delegate { };
         public UnityAction onReset = delegate { };
