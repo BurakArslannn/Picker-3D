@@ -1,0 +1,125 @@
+using RunTime.Commands.Player;
+using RunTime.Controllers.Player;
+using RunTime.Data.UnityObjects;
+using RunTime.Data.ValueObjects;
+using RunTime.Keys;
+using RunTime.Signals;
+using UnityEngine;
+
+namespace RunTime.Managers
+{
+    public class PlayerManager : MonoBehaviour
+    {
+        #region Self Variables
+
+        #region Public Variables
+
+        public byte stageValues;
+
+        internal ForceBallsToPoolCommand ForceCommand;
+
+        #endregion
+
+        #region Serialized Variables
+
+        [SerializeField] private PlayerMovementController movementController;
+        [SerializeField] private PlayerMeshController meshController;
+        [SerializeField] private PlayerPhysicController physicController;
+
+        #endregion
+
+        #region Private Variables
+
+        private PlayerData _data;
+
+        #endregion
+
+        #endregion
+
+        private void Awake()
+        {
+            _data = GetPlayerData();
+            SendDataToController();
+            Init();
+        }
+
+        private void SendDataToController()
+        {
+            movementController.SetData(_data.MovementData);
+            meshController.SetData(_data.MeshData);
+        }
+
+        private PlayerData GetPlayerData()
+        {
+            return Resources.Load<CD_Player>("Data/CD_Player").Data;
+        }
+
+        private void Init()
+        {
+            ForceCommand = new ForceBallsToPoolCommand(this, _data.ForceData);
+        }
+
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void SubscribeEvents()
+        {
+            InputSignals.Instance.onInputTaken += () => movementController.IsReadyToMove(true);
+            InputSignals.Instance.onInputReleased += () => movementController.IsReadyToMove(false);
+            InputSignals.Instance.onInputDragged += OnInputDragged;
+            UISignals.Instance.onPlay += () => movementController.IsReadyToPlay(true);
+            CoreGameSignals.Instance.onLevelSuccessful += () => movementController.IsReadyToPlay(false);
+            CoreGameSignals.Instance.onLevelFailed += () => movementController.IsReadyToPlay(false);
+            CoreGameSignals.Instance.onStageAreaEntered += () => movementController.IsReadyToPlay(false);
+
+            CoreGameSignals.Instance.onStageAreaSuccesful += OnStageAreaSuccessful;
+            CoreGameSignals.Instance.onFinishAreaEntered += OnFinishAreaEntered;
+            CoreGameSignals.Instance.onReset += OnReset;
+        }
+
+        private void OnFinishAreaEntered()
+        {
+            //level Success
+            CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+            //Mini game yazılmalı.
+        }
+
+        private void OnStageAreaSuccessful(byte value)
+        {
+            stageValues = (byte)++value;
+        }
+
+        private void OnInputDragged(HorizontalInputParams inputParams)
+        {
+            movementController.UpdateInputParams(inputParams);
+        }
+
+        private void OnReset()
+        {
+            stageValues = 0;
+            movementController.OnReset();
+            meshController.OnReset();
+        }
+
+        private void UnSubscribeEvents()
+        {
+            InputSignals.Instance.onInputTaken -= () => movementController.IsReadyToMove(true);
+            InputSignals.Instance.onInputReleased -= () => movementController.IsReadyToMove(false);
+            InputSignals.Instance.onInputDragged -= OnInputDragged;
+            UISignals.Instance.onPlay -= () => movementController.IsReadyToPlay(true);
+            CoreGameSignals.Instance.onLevelSuccessful -= () => movementController.IsReadyToPlay(false);
+            CoreGameSignals.Instance.onLevelFailed -= () => movementController.IsReadyToPlay(false);
+            CoreGameSignals.Instance.onStageAreaEntered -= () => movementController.IsReadyToPlay(false);
+            CoreGameSignals.Instance.onStageAreaSuccesful -= OnStageAreaSuccessful;
+            CoreGameSignals.Instance.onFinishAreaEntered -= OnFinishAreaEntered;
+            CoreGameSignals.Instance.onReset -= OnReset;
+        }
+
+        private void OnDisable()
+        {
+            UnSubscribeEvents();
+        }
+    }
+}

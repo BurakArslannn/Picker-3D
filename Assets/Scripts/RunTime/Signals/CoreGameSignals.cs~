@@ -34,7 +34,7 @@ namespace RunTime.Signals
         //Func can send and return parameter
         public Func<byte> onGetLevelValue = delegate { return 0; };
         public UnityAction onStageAreaEntered = delegate { };
-        public UnityAction<byte> onStageAreaSuccesful = delegate { };
+        public UnityAction onStageAreaSuccesful = delegate { };
         public UnityAction onFinishAreaEntered = delegate { };
     }
 }

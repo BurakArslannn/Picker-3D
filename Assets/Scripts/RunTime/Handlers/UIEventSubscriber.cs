@@ -1,5 +1,6 @@
 using System;
 using RunTime.Enums;
+using Runtime.Managers;
 using RunTime.Managers;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -57,8 +58,6 @@ namespace RunTime.Handlers
                     button.onClick.AddListener(_manager.RestartLevel);
 
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
             }
         }
 
@@ -77,8 +76,6 @@ namespace RunTime.Handlers
                     button.onClick.RemoveListener(_manager.RestartLevel);
 
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
             }
         }
 

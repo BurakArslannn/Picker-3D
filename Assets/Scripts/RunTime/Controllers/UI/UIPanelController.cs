@@ -4,7 +4,7 @@ using RunTime.Signals;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace RunTime.Controllers.UI
+namespace Runtime.Controllers.UI
 {
     public class UIPanelController : MonoBehaviour
     {
@@ -20,18 +20,25 @@ namespace RunTime.Controllers.UI
 
         private void OnEnable()
         {
-            SubscribeEvents();
+            if (CoreUISignals.Instance != null)
+            {
+                SubscribeEvents();
+            }
+            else
+            {
+                Debug.LogError("CoreUISignals.Instance is null in UIPanelController");
+            }
         }
 
         private void SubscribeEvents()
         {
-            CoreUISignals.Instance.onClosepanel += OnClosePanel;
             CoreUISignals.Instance.onOpenpanel += OnOpenPanel;
-            CoreUISignals.Instance.onCloseAllPanel += OnCloseAllPanel;
+            CoreUISignals.Instance.onClosepanel += OnClosePanel;
+            CoreUISignals.Instance.onCloseAllPanel += OnCloseAllPanels;
         }
 
-        [NaughtyAttributes.Button("Close All Panel")]
-        private void OnCloseAllPanel()
+        [Button("Close All Panels")]
+        private void OnCloseAllPanels()
         {
             foreach (var layer in layers)
             {
@@ -43,32 +50,31 @@ namespace RunTime.Controllers.UI
 #endif
             }
         }
-[Button("Open Panel")]
-        private void OnOpenPanel(UIPanelTypes panelTypes, int value)
+
+        [Button("Open Panel")]
+        private void OnOpenPanel(UIPanelTypes panelType, int value)
         {
             OnClosePanel(value);
-            Instantiate(Resources.Load<GameObject>($"Screens/{panelTypes}Panel"), layers[value]);
+            Instantiate(Resources.Load<GameObject>($"Screens/{panelType}Panel"), layers[value]);
         }
 
         [Button("Close Panel")]
         private void OnClosePanel(int value)
         {
             if (layers[value].childCount <= 0) return;
-            {
-#if UNITY_EDITOR
-                DestroyImmediate(layers[value].GetChild(0).gameObject);
-#else
-            Destroy(layers[value].GetChild(0).gameObject);
-#endif
-            }
-        }
 
+#if UNITY_EDITOR
+            DestroyImmediate(layers[value].GetChild(0).gameObject);
+#else
+                Destroy(layers[value].GetChild(0).gameObject);
+#endif
+        }
 
         private void UnSubscribeEvents()
         {
             CoreUISignals.Instance.onClosepanel -= OnClosePanel;
             CoreUISignals.Instance.onOpenpanel -= OnOpenPanel;
-            CoreUISignals.Instance.onCloseAllPanel -= OnCloseAllPanel;
+            CoreUISignals.Instance.onCloseAllPanel -= OnCloseAllPanels;
         }
 
         private void OnDisable()

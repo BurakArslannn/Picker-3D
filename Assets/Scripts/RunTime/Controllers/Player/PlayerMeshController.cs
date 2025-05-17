@@ -1,0 +1,65 @@
+using DG.Tweening;
+using RunTime.Data.ValueObjects;
+using Sirenix.OdinInspector;
+using TMPro;
+using UnityEngine;
+
+namespace RunTime.Controllers.Player
+{
+    public class PlayerMeshController : MonoBehaviour
+    {
+        #region Self Variables
+
+        #region SerializeField
+
+        [SerializeField] private new Renderer renderer;
+        [SerializeField] private TextMeshPro scaleText;
+        [SerializeField] private ParticleSystem confetti;
+
+        #endregion
+
+        #region Private Variables
+
+        [ShowInInspector] private PlayerData.PlayerMeshData _data;
+
+        #endregion
+
+        #endregion
+
+        internal void SetData(PlayerData.PlayerMeshData data)
+        {
+            _data = data;
+        }
+
+        internal void ScaleUpPlayer()
+        {
+            //We only scale up x axis for now. 
+            renderer.gameObject.transform.DOScaleX(_data.ScaleCounter, 1).SetEase(Ease.Flash);
+        }
+
+        internal void ShowUpText()
+        {
+            scaleText.DOFade(1, 0).SetEase(Ease.Flash).OnComplete(() =>
+            {
+                scaleText.DOFade(0, .30f).SetDelay(.35f);
+                scaleText.rectTransform.DOAnchorPosY(1f, .65f).SetEase(Ease.Linear);
+            });
+        }
+
+        internal void PlayConfetti()
+        {
+            confetti.Play();
+            // confetti.Emit(new ParticleSystem.Particle()
+            // {
+            //     position = transform.position,
+            //     rotation = transform.rotation,
+            //     velocity = Vector3.zero
+            // });
+        }
+
+        internal void OnReset()
+        {
+            renderer.gameObject.transform.DOScaleX(1, 1).SetEase(Ease.Linear);
+        }
+    }
+}

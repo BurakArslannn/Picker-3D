@@ -45,16 +45,18 @@ namespace RunTime.Managers
             CoreGameSignals.Instance.onReset += OnReset;
         }
 
-        private void OnReset()
-        {
-            transform.position = _firstPosition;
-        }
+
 
         private void OnSetCameraSignals()
         {
             //var player = FindObjectOfType<PlayerManager>().transform;
             //virtualCamera.Follow = player;
             //virtualCamera.LookAt = player;
+        }
+
+        private void OnReset()
+        {
+            transform.position = _firstPosition;
         }
 
         private void UnSubscribeEvents()

@@ -3,6 +3,7 @@ using RunTime.Data.UnityObjects;
 using RunTime.Data.ValueObjects;
 using RunTime.Enums;
 using RunTime.Signals;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RunTime.Managers
@@ -70,6 +71,7 @@ namespace RunTime.Managers
             CoreGameSignals.Instance.onRestartLevel += OnRestartLevel;
         }
 
+        [Button]
         private void OnNextlevel()
         {
             _currentLevel++;
@@ -83,6 +85,7 @@ namespace RunTime.Managers
             return (byte)_currentLevel;
         }
 
+        [Button]
         private void OnRestartLevel()
         {
             CoreGameSignals.Instance.onClearActiveLevel?.Invoke();
