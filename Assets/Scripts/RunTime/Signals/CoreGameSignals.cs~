@@ -1,28 +1,12 @@
 using System;
+using RunTime.Extentions;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace RunTime.Signals
 {
-    public class CoreGameSignals : MonoBehaviour
+    public class CoreGameSignals : MonoSingleton<CoreGameSignals>
     {
-        #region Singleton
-
-        public static CoreGameSignals Instance;
-
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-        }
-
-        #endregion
-
         public UnityAction<byte> onLevelInitialize = delegate { };
         public UnityAction onClearActiveLevel = delegate { };
         public UnityAction onLevelSuccessful = delegate { };
@@ -34,7 +18,7 @@ namespace RunTime.Signals
         //Func can send and return parameter
         public Func<byte> onGetLevelValue = delegate { return 0; };
         public UnityAction onStageAreaEntered = delegate { };
-        public UnityAction onStageAreaSuccesful = delegate { };
+        public UnityAction<byte> onStageAreaSuccesful = delegate { };
         public UnityAction onFinishAreaEntered = delegate { };
     }
 }
