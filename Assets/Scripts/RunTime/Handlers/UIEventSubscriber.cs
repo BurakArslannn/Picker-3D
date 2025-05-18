@@ -1,12 +1,10 @@
-using System;
 using RunTime.Enums;
 using Runtime.Managers;
-using RunTime.Managers;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace RunTime.Handlers
+namespace Runtime.Handlers
 {
     public class UIEventSubscriber : MonoBehaviour
     {
@@ -27,13 +25,12 @@ namespace RunTime.Handlers
 
         #endregion
 
-
         private void Awake()
         {
-            GetReferences();
+            FindReferences();
         }
 
-        private void GetReferences()
+        private void FindReferences()
         {
             _manager = FindObjectOfType<UIManager>();
         }
@@ -48,40 +45,48 @@ namespace RunTime.Handlers
             switch (type)
             {
                 case UIEventSubscriptionTypes.OnPlay:
+                {
                     button.onClick.AddListener(_manager.Play);
                     break;
+                }
                 case UIEventSubscriptionTypes.OnNextLevel:
+                {
                     button.onClick.AddListener(_manager.NextLevel);
-
                     break;
+                }
                 case UIEventSubscriptionTypes.OnRestartLevel:
+                {
                     button.onClick.AddListener(_manager.RestartLevel);
-
                     break;
+                }
             }
         }
 
-        private void UnSubscribeEvents()
+        private void UnsubscribeEvents()
         {
             switch (type)
             {
                 case UIEventSubscriptionTypes.OnPlay:
+                {
                     button.onClick.RemoveListener(_manager.Play);
                     break;
+                }
                 case UIEventSubscriptionTypes.OnNextLevel:
+                {
                     button.onClick.RemoveListener(_manager.NextLevel);
-
                     break;
+                }
                 case UIEventSubscriptionTypes.OnRestartLevel:
+                {
                     button.onClick.RemoveListener(_manager.RestartLevel);
-
                     break;
+                }
             }
         }
 
         private void OnDisable()
         {
-            UnSubscribeEvents();
+            UnsubscribeEvents();
         }
     }
 }

@@ -48,10 +48,12 @@
     <Compile Include="Assets\TempAssets\_MK\MKRampCreator\MKRampCreator.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXRotation.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\Pool\PoolController.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXTarget.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
     <Compile Include="Assets\Scripts\RunTime\Enums\UIEventSubscriptionTypes.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerPhysicsController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKTextureChannelPacker\MKTextureChannelPacker.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PoolData.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
@@ -60,6 +62,7 @@
     <Compile Include="Assets\Scripts\RunTime\Managers\UIManager.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
     <Compile Include="Assets\Scripts\RunTime\Handlers\UIEventSubscriber.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Enums\GameStates.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\NonConvexColliderAsset.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\API\NonConvexColliderAPI.cs" />
@@ -88,8 +91,8 @@
     <Compile Include="Assets\Scripts\RunTime\Enums\UIPanelTypes.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\RuntimeDemo\RuntimeTest.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PlayerData.cs" />
-    <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerPhysicController.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectCycler.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\UIPanelController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Uniform.cs" />
     <Compile Include="Assets\Scripts\RunTime\Commands\Player\ForceBallsToPoolCommand.cs" />
@@ -445,6 +448,9 @@
     <Reference Include="Sirenix.Serialization">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization.Config">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Assets\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
     </Reference>
@@ -462,6 +468,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Utilities.Editor">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Assets\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
@@ -999,9 +1008,6 @@
       <Project>{c31cde2f-7e64-4032-5e1c-d5dacc4f00c5}</Project>
       <Name>Boxophobic.PolyverseSkies.Scripts</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Scripts\RunTime\Controllers\Pool\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

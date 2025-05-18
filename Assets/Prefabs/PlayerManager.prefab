@@ -48,9 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e2e8cc4ee2473d97c960372f533cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   renderer: {fileID: 7747392830739109728}
   scaleText: {fileID: 2721776180890316817}
-  confetti: {fileID: 4211781110337588529}
+  confettiParticle: {fileID: 0}
 --- !u!1 &3712395258436581024
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,10 +449,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c32fc4bab34dfcb5f87ed18e9a0070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageValues: 0
+  StageValue: 0
   movementController: {fileID: 8773604688476737511}
   meshController: {fileID: 5789146457797339064}
-  physicController: {fileID: 864892172146747059}
+  physicsController: {fileID: 0}
 --- !u!114 &8773604688476737511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,12 +629,6 @@ PrefabInstance:
 --- !u!4 &4211781110322326225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 420096, guid: 36bdc02b23d9ca94d93bd715c0cca5c0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4211781110321906641}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4211781110337588529 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19877600, guid: 36bdc02b23d9ca94d93bd715c0cca5c0,
     type: 3}
   m_PrefabInstance: {fileID: 4211781110321906641}
   m_PrefabAsset: {fileID: 0}

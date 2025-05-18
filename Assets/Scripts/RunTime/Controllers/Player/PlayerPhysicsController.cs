@@ -1,0 +1,79 @@
+using DG.Tweening;
+using RunTime.Controllers.Pool;
+using Runtime.Managers;
+using RunTime.Signals;
+using UnityEngine;
+
+namespace RunTime.Controllers.Player
+{
+    public class PlayerPhysicsController : MonoBehaviour
+    {
+        #region Self Variables
+
+        #region Serialized Variables
+
+        [SerializeField] private PlayerManager manager;
+        [SerializeField] private new Collider collider;
+        [SerializeField] private new Rigidbody rigidbody;
+
+        private readonly string _stageArea = "Stage Area";
+        private readonly string _finishArea = "Finish Area";
+        private readonly string _minigame = "Minigame Area";
+
+        #endregion
+
+        #endregion
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag(_stageArea))
+            {
+                manager.ForceCommand.Execute();
+                CoreGameSignals.Instance.onStageAreaEntered?.Invoke();
+                InputSignals.Instance.onDisableInput?.Invoke();
+
+                DOVirtual.DelayedCall(3, () =>
+                {
+                    var result = other.transform.parent.GetComponentInChildren<PoolController>()
+                        .TakeResults(manager.StageValue);
+
+                    if (result)
+                    {
+                        CoreGameSignals.Instance.onStageAreaSuccessful?.Invoke(manager.StageValue);
+                        InputSignals.Instance.onEnableInput?.Invoke();
+                    }
+                    else
+                    {
+                        CoreGameSignals.Instance.onLevelFailed?.Invoke();
+                    }
+                });
+                return;
+            }
+
+            if (other.CompareTag(_finishArea))
+            {
+                CoreGameSignals.Instance.onFinishAreaEntered?.Invoke();
+                InputSignals.Instance.onDisableInput?.Invoke();
+                return;
+            }
+
+            if (other.CompareTag(_minigame))
+            {
+                //Write the MiniGame Mechanics
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.yellow;
+            var transform1 = manager.transform;
+            var positon1 = transform1.position;
+
+            Gizmos.DrawSphere(new Vector3(positon1.x, positon1.y - 1f, positon1.z + 0.9f), 1.7f);
+        }
+
+        public void OnReset()
+        {
+        }
+    }
+}

@@ -13,7 +13,7 @@ namespace RunTime.Commands.Level
 
         internal void Execute()
         {
-            if (-_levelHolder.transform.childCount <= 0) return;
+            if (_levelHolder.transform.childCount <= 0) return;
             Object.Destroy(_levelHolder.transform.GetChild(0).gameObject);
         }
     }

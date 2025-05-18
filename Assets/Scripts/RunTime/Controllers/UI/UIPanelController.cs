@@ -20,21 +20,14 @@ namespace Runtime.Controllers.UI
 
         private void OnEnable()
         {
-            if (CoreUISignals.Instance != null)
-            {
-                SubscribeEvents();
-            }
-            else
-            {
-                Debug.LogError("CoreUISignals.Instance is null in UIPanelController");
-            }
+            SubscribeEvents();
         }
 
         private void SubscribeEvents()
         {
-            CoreUISignals.Instance.onOpenpanel += OnOpenPanel;
-            CoreUISignals.Instance.onClosepanel += OnClosePanel;
-            CoreUISignals.Instance.onCloseAllPanel += OnCloseAllPanels;
+            CoreUISignals.Instance.onClosePanel += OnClosePanel;
+            CoreUISignals.Instance.onOpenPanel += OnOpenPanel;
+            CoreUISignals.Instance.onCloseAllPanels += OnCloseAllPanels;
         }
 
         [Button("Close All Panels")]
@@ -72,9 +65,9 @@ namespace Runtime.Controllers.UI
 
         private void UnSubscribeEvents()
         {
-            CoreUISignals.Instance.onClosepanel -= OnClosePanel;
-            CoreUISignals.Instance.onOpenpanel -= OnOpenPanel;
-            CoreUISignals.Instance.onCloseAllPanel -= OnCloseAllPanels;
+            CoreUISignals.Instance.onClosePanel -= OnClosePanel;
+            CoreUISignals.Instance.onOpenPanel -= OnOpenPanel;
+            CoreUISignals.Instance.onCloseAllPanels -= OnCloseAllPanels;
         }
 
         private void OnDisable()

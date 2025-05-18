@@ -1,6 +1,5 @@
 using RunTime.Enums;
 using RunTime.Extentions;
-using UnityEngine;
 using UnityEngine.Events;
 
 namespace RunTime.Signals
@@ -8,7 +7,7 @@ namespace RunTime.Signals
     public class CoreUISignals : MonoSingleton<CoreUISignals>
     {
         public UnityAction<UIPanelTypes, int> onOpenpanel = delegate { };
-        public UnityAction<int> onClosepanel = delegate { };
-        public UnityAction onCloseAllPanel = delegate { };
+        public UnityAction<int> onClosePanel = delegate { };
+        public UnityAction onCloseAllPanels = delegate { };
     }
 }

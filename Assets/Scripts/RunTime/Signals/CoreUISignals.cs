@@ -6,8 +6,8 @@ namespace RunTime.Signals
 {
     public class CoreUISignals : MonoSingleton<CoreUISignals>
     {
-        public UnityAction<UIPanelTypes, int> onOpenpanel = delegate { };
-        public UnityAction<int> onClosepanel = delegate { };
-        public UnityAction onCloseAllPanel = delegate { };
+        public UnityAction<UIPanelTypes, int> onOpenPanel = delegate { };
+        public UnityAction<int> onClosePanel = delegate { };
+        public UnityAction onCloseAllPanels = delegate { };
     }
 }

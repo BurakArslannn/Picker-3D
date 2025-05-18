@@ -17,6 +17,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onLevelSuccessful += OnLevelSuccessful;
             CoreGameSignals.Instance.onLevelFailed += OnLevelFailed;
             CoreGameSignals.Instance.onReset += OnReset;
+            CoreGameSignals.Instance.onStageAreaSuccesful += OnStageAreaSuccessful;
         }
 
         private void UnSubscribeEvents()
@@ -25,6 +26,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onLevelSuccessful -= OnLevelSuccessful;
             CoreGameSignals.Instance.onLevelFailed -= OnLevelFailed;
             CoreGameSignals.Instance.onReset -= OnReset;
+            CoreGameSignals.Instance.onStageAreaSuccesful -= OnStageAreaSuccessful;
         }
 
         private void OnDisable()
@@ -34,23 +36,23 @@ namespace Runtime.Managers
 
         private void OnLevelInitialize(byte levelValue)
         {
-            CoreUISignals.Instance.OnOpenpanel?.Invoke(UIPanelTypes.Level, 0);
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Level, 0);
             UISignals.Instance.onSetLevelValue?.Invoke(levelValue);
         }
 
         private void OnLevelSuccessful()
         {
-            CoreUISignals.Instance.OnOpenpanel?.Invoke(UIPanelTypes.Win, 2);
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Win, 2);
         }
 
         private void OnLevelFailed()
         {
-            CoreUISignals.Instance.OnOpenpanel?.Invoke(UIPanelTypes.Fail, 2);
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Fail, 2);
         }
 
         public void NextLevel()
         {
-            CoreGameSignals.Instance.onNextlevel?.Invoke();
+            CoreGameSignals.Instance.onNextLevel?.Invoke();
             CoreGameSignals.Instance.onReset?.Invoke();
         }
 
@@ -63,7 +65,7 @@ namespace Runtime.Managers
         public void Play()
         {
             UISignals.Instance.onPlay?.Invoke();
-            CoreUISignals.Instance.onClosepanel?.Invoke(1);
+            CoreUISignals.Instance.onClosePanel?.Invoke(1);
             InputSignals.Instance.onEnableInput?.Invoke();
             CameraSignals.Instance.onSetCameraTarget?.Invoke();
         }
@@ -75,8 +77,8 @@ namespace Runtime.Managers
 
         private void OnReset()
         {
-            CoreUISignals.Instance.onCloseAllPanel?.Invoke();
-            CoreUISignals.Instance.OnOpenpanel?.Invoke(UIPanelTypes.Start, 1);
+            CoreUISignals.Instance.onCloseAllPanels?.Invoke();
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1);
         }
     }
 }

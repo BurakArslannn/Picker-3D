@@ -1,17 +1,19 @@
 using System;
+using RunTime.Enums;
 using RunTime.Extentions;
-using UnityEngine;
 using UnityEngine.Events;
 
 namespace RunTime.Signals
 {
     public class CoreGameSignals : MonoSingleton<CoreGameSignals>
     {
+        public UnityAction<GameStates> onChangeGameState = delegate { };
+
         public UnityAction<byte> onLevelInitialize = delegate { };
         public UnityAction onClearActiveLevel = delegate { };
         public UnityAction onLevelSuccessful = delegate { };
         public UnityAction onLevelFailed = delegate { };
-        public UnityAction onNextlevel = delegate { };
+        public UnityAction onNextLevel = delegate { };
         public UnityAction onRestartLevel = delegate { };
         public UnityAction onReset = delegate { };
 
