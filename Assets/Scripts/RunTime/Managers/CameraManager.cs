@@ -46,11 +46,10 @@ namespace RunTime.Managers
         }
 
 
-
         private void OnSetCameraSignals()
         {
-            //var player = FindObjectOfType<PlayerManager>().transform;
-            //virtualCamera.Follow = player;
+            var player = FindObjectOfType<PlayerManager>().transform;
+            virtualCamera.Follow = player;
             //virtualCamera.LookAt = player;
         }
 

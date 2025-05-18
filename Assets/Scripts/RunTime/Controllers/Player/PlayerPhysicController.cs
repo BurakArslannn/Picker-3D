@@ -1,6 +1,4 @@
-using System;
 using RunTime.Managers;
-using RunTime.Signals;
 using UnityEngine;
 
 namespace RunTime.Controllers.Player
@@ -23,30 +21,13 @@ namespace RunTime.Controllers.Player
 
         #endregion
 
-        private void OnTriggerEnter(Collider other)
+        private void OnDrawGizmos()
         {
-            if (other.CompareTag(_stageArea))
-            {
-                manager.ForceCommand.Execute();
-                CoreGameSignals.Instance.onStageAreaEntered?.Invoke();
-                InputSignals.Instance.onDisableInput?.Invoke();
+            Gizmos.color = Color.yellow;
+            var transform1 = manager.transform;
+            var positon1 = transform1.position;
 
-                //Stage area Control
-            }
-
-            if (other.CompareTag(_finishArea))
-            {
-                CoreGameSignals.Instance.onFinishAreaEntered?.Invoke();
-                InputSignals.Instance.onDisableInput?.Invoke();
-                CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
-                return;
-            }
-
-            if (other.CompareTag(_minigame))
-            {
-                //Write minigame mechanics
-                
-            }
+            Gizmos.DrawSphere(new Vector3(positon1.x, positon1.y + 1f, positon1.z + 1f), 1.35f);
         }
     }
 }

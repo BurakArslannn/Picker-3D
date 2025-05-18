@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\RunTime\Signals\CameraSignals.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKMeshUtility\MKMeshUtility.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\InputData.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Extentions\LockCinemachineAxis.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerMeshController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Input.cs" />
     <Compile Include="Assets\Scripts\RunTime\Enums\UIPanelTypes.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXMouseOrbit.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectControllerPooled.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\LevelData.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Extentions\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\CameraManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Player.cs" />
     <Compile Include="Assets\Scripts\RunTime\Keys\HorizontalInputParams.cs" />
@@ -999,7 +1001,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Scripts\RunTime\Extentions\" />
+    <Folder Include="Assets\Scripts\RunTime\Controllers\Pool\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -1,0 +1,61 @@
+using System;
+using Cinemachine;
+using UnityEngine;
+
+namespace RunTime.Extentions
+{
+    public enum CinemachineLockAxis
+    {
+        x,
+        y,
+        z
+    }
+
+    [ExecuteInEditMode]
+    [SaveDuringPlay]
+    [AddComponentMenu("")]
+    public class LockCinemachineAxis : CinemachineExtension
+    {
+        [SerializeField] private CinemachineLockAxis lockAxis;
+
+        [Tooltip("Lock the Cinemachine Virtual Camera X axis position with this value")]
+        public float ClampValue = 0;
+
+        protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam,
+            CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
+        {
+            switch (lockAxis)
+            {
+                case CinemachineLockAxis.x:
+                    if (stage == CinemachineCore.Stage.Body)
+                    {
+                        var pos = state.RawPosition;
+                        pos.x = ClampValue;
+                        state.RawPosition = pos;
+                    }
+
+                    break;
+                case CinemachineLockAxis.y:
+                    if (stage == CinemachineCore.Stage.Body)
+                    {
+                        var pos = state.RawPosition;
+                        pos.y = ClampValue;
+                        state.RawPosition = pos;
+                    }
+
+                    break;
+                case CinemachineLockAxis.z:
+                    if (stage == CinemachineCore.Stage.Body)
+                    {
+                        var pos = state.RawPosition;
+                        pos.z = ClampValue;
+                        state.RawPosition = pos;
+                    }
+
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+    }
+}

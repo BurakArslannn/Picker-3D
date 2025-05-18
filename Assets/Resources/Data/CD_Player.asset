@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a14206aefbfc4893bf9ba5f6c6828b02, type: 3}
   m_Name: CD_Player
   m_EditorClassIdentifier: 
-  data:
+  Data:
     MovementData:
-      ForwardSpeed: 5
+      ForwardSpeed: 12
       SidewaySpeed: 3
     MeshData:
       ScaleCounter: 1.2
     ForceData:
       ForceParameters:
         x: 0
-        y: 4
-        z: 10
+        y: 8
+        z: 2.4
