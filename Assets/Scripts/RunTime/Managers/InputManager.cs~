@@ -86,20 +86,20 @@ namespace Runtime.Managers
             {
                 _isTouching = false;
                 InputSignals.Instance.onInputReleased?.Invoke();
-                //Debug.LogWarning("Executed ----> OnInputReleased");
+                Debug.LogWarning("Executed ----> OnInputReleased");
             }
 
             if (Input.GetMouseButtonDown(0) && !IsPointerOverUIElement())
             {
                 _isTouching = true;
                 InputSignals.Instance.onInputTaken?.Invoke();
-               // Debug.LogWarning("Executed ----> OnInputTaken");
+                Debug.LogWarning("Executed ----> OnInputTaken");
 
                 if (!_isFirstTimeTouchTaken)
                 {
                     _isFirstTimeTouchTaken = true;
                     InputSignals.Instance.onFirstTimeTouchTaken?.Invoke();
-                   // Debug.LogWarning("Executed ----> onFirstTimeTouchTaken");
+                    Debug.LogWarning("Executed ----> onFirstTimeTouchTaken");
                 }
 
                 _mousePosition = Input.mousePosition;
@@ -129,7 +129,7 @@ namespace Runtime.Managers
                             HorizontalValue = _moveVector.x,
                             ClampValues = _data.ClampValues
                         });
-                       // Debug.LogWarning($"Executed ----> onInputDragged {_moveVector.x}");
+                        Debug.LogWarning($"Executed ----> onInputDragged {_moveVector.x}");
                     }
                 }
             }

@@ -33,14 +33,23 @@ namespace Runtime.Controllers.UI
         [Button("Close All Panels")]
         private void OnCloseAllPanels()
         {
-            foreach (var layer in layers)
+            for (int i = 0; i < layers.Count; i++)
             {
-                if (layer.childCount <= 0) return;
+                if (i == 0)
+                {
+                    continue;
+                }
+
+                Transform layer = layers[i];
+
+                if (layer.childCount > 0)
+                {
 #if UNITY_EDITOR
-                DestroyImmediate(layer.GetChild(0).gameObject);
+                    DestroyImmediate(layer.GetChild(0).gameObject);
 #else
-                Destroy(layer.GetChild(0).gameObject);
+            Destroy(layer.GetChild(0).gameObject);
 #endif
+                }
             }
         }
 

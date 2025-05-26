@@ -72,6 +72,7 @@ namespace Runtime.Managers
         [Button]
         private void OnNextLevel()
         {
+            Debug.LogWarning("OnNextLevel");
             _currentLevel++;
             CoreGameSignals.Instance.onClearActiveLevel?.Invoke();
             CoreGameSignals.Instance.onReset?.Invoke();
