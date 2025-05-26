@@ -59,7 +59,7 @@ namespace RunTime.Controllers.Player
 
             if (other.CompareTag(_minigame))
             {
-                //Write the MiniGame Mechanics
+                CoreGameSignals.Instance.onMiniGameAreaEntered?.Invoke();
             }
         }
 

@@ -99,5 +99,12 @@ namespace RunTime.Controllers.Player
             _isReadyToMove = false;
             _isReadyToPlay = false;
         }
+
+        //Minigame
+        internal void MultiplyForwardSpeed(float value)
+        {
+            value = value * _data.ForwardSpeed;
+            _data.ForwardSpeed = value;
+        }
     }
 }

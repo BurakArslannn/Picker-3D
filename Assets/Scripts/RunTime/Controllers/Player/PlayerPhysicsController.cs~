@@ -1,12 +1,12 @@
 using DG.Tweening;
 using RunTime.Controllers.Pool;
-using RunTime.Managers;
+using Runtime.Managers;
 using RunTime.Signals;
 using UnityEngine;
 
 namespace RunTime.Controllers.Player
 {
-    public class PlayerPhysicController : MonoBehaviour
+    public class PlayerPhysicsController : MonoBehaviour
     {
         #region Self Variables
 
@@ -39,7 +39,7 @@ namespace RunTime.Controllers.Player
 
                     if (result)
                     {
-                        CoreGameSignals.Instance.onStageAreaSuccesful?.Invoke(manager.StageValue);
+                        CoreGameSignals.Instance.onStageAreaSuccessful?.Invoke(manager.StageValue);
                         InputSignals.Instance.onEnableInput?.Invoke();
                     }
                     else
@@ -70,6 +70,10 @@ namespace RunTime.Controllers.Player
             var positon1 = transform1.position;
 
             Gizmos.DrawSphere(new Vector3(positon1.x, positon1.y - 1f, positon1.z + 0.9f), 1.7f);
+        }
+
+        public void OnReset()
+        {
         }
     }
 }

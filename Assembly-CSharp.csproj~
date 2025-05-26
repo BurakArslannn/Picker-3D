@@ -54,8 +54,8 @@
     <Compile Include="Assets\Scripts\RunTime\Enums\UIEventSubscriptionTypes.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerPhysicsController.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Managers\MiniGameManager.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKTextureChannelPacker\MKTextureChannelPacker.cs" />
-    <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PoolData.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Commands\Level\OnLevelDestroyerCommand.cs" />
@@ -1008,6 +1008,9 @@
       <Project>{c31cde2f-7e64-4032-5e1c-d5dacc4f00c5}</Project>
       <Name>Boxophobic.PolyverseSkies.Scripts</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Scripts\RunTime\Controllers\MiniGame\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
