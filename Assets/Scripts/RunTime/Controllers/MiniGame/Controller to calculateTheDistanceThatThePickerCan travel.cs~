@@ -1,0 +1,9 @@
+using UnityEngine;
+
+namespace RunTime.Controllers.MiniGame
+{
+    public class ControllerToCalculateTheDistanceThatThePickerCanTravel : MonoBehaviour
+    {
+        
+    }
+}

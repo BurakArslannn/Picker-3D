@@ -1,5 +1,6 @@
 using RunTime.Enums;
 using RunTime.Signals;
+using StylizedWater2;
 using UnityEngine;
 
 namespace Runtime.Managers
@@ -17,7 +18,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onLevelSuccessful += OnLevelSuccessful;
             CoreGameSignals.Instance.onLevelFailed += OnLevelFailed;
             CoreGameSignals.Instance.onReset += OnReset;
-            CoreGameSignals.Instance.onStageAreaSuccesful += OnStageAreaSuccessful;
+            CoreGameSignals.Instance.onStageAreaSuccessful += OnStageAreaSuccessful;
         }
 
         private void UnSubscribeEvents()
@@ -26,7 +27,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onLevelSuccessful -= OnLevelSuccessful;
             CoreGameSignals.Instance.onLevelFailed -= OnLevelFailed;
             CoreGameSignals.Instance.onReset -= OnReset;
-            CoreGameSignals.Instance.onStageAreaSuccesful -= OnStageAreaSuccessful;
+            CoreGameSignals.Instance.onStageAreaSuccessful -= OnStageAreaSuccessful;
         }
 
         private void OnDisable()
@@ -73,6 +74,7 @@ namespace Runtime.Managers
         private void OnStageAreaSuccessful(byte stageValue)
         {
             UISignals.Instance.onSetStageColor?.Invoke(stageValue);
+            UISignals.Instance.onSetScore?.Invoke(stageValue);
         }
 
         private void OnReset()

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using RunTime.Data.UnityObjects;
 using RunTime.Data.ValueObjects;
+using RunTime.Managers;
 using RunTime.Signals;
 using Sirenix.OdinInspector;
 using TMPro;
@@ -44,7 +45,7 @@ namespace RunTime.Controllers.Pool
         private PoolData GetPoolData()
         {
             return Resources.Load<CD_Level>("Data/CD_Level")
-                .Levels[(int)CoreGameSignals.Instance.onGetLevelValue?.Invoke()].Pools[stageID];
+                .Levels[(int)CoreGameSignals.Instance.onGetLevelValue?.Invoke()].PoolList[stageID];
         }
 
         private void OnEnable()
@@ -90,7 +91,14 @@ namespace RunTime.Controllers.Pool
         {
             if (stageID == managerStageValues)
             {
-                return _collectedCount >= _data.RequiredObjectCount;
+                bool isComplete = _collectedCount >= _data.RequiredObjectCount;
+
+                if (isComplete)
+                {
+                    CollectedPoolDataManager.Instance.AddCollected(_collectedCount);
+                }
+
+                return isComplete;
             }
 
             return false;
@@ -139,5 +147,7 @@ namespace RunTime.Controllers.Pool
         {
             UnSubscribeEvents();
         }
+        
+        
     }
 }

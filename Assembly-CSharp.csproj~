@@ -53,6 +53,7 @@
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\ParticleEffectsLibrary.cs" />
     <Compile Include="Assets\Scripts\RunTime\Enums\UIEventSubscriptionTypes.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\UI\ScorePanelController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerPhysicsController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\MiniGameManager.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKTextureChannelPacker\MKTextureChannelPacker.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
     <Compile Include="Assets\Scripts\RunTime\Signals\CoreUISignals.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\LevelPanelController.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\MiniGame\MiniGameController.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\NonConvexColliderComponent.cs" />
     <Compile Include="Assets\Scripts\RunTime\Signals\CoreGameSignals.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Keywords.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\API\NonConvexColliderInterop.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Properties.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Managers\CollectedPoolDataManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Commands\Level\OnLevelLoaderCommand.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Signals\UISignals.cs" />
@@ -1008,9 +1011,6 @@
       <Project>{c31cde2f-7e64-4032-5e1c-d5dacc4f00c5}</Project>
       <Name>Boxophobic.PolyverseSkies.Scripts</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Scripts\RunTime\Controllers\MiniGame\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

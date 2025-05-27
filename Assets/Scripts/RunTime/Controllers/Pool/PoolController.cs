@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using RunTime.Data.UnityObjects;
 using RunTime.Data.ValueObjects;
+using RunTime.Managers;
 using RunTime.Signals;
 using Sirenix.OdinInspector;
 using TMPro;
@@ -29,7 +30,7 @@ namespace RunTime.Controllers.Pool
         [ShowInInspector] private PoolData _data;
         [ShowInInspector] private byte _collectedCount;
 
-        private readonly string collectable = "Collectable";
+        private readonly string _collectable = "Collectable";
 
         #endregion
 
@@ -90,7 +91,14 @@ namespace RunTime.Controllers.Pool
         {
             if (stageID == managerStageValues)
             {
-                return _collectedCount >= _data.RequiredObjectCount;
+                bool isComplete = _collectedCount >= _data.RequiredObjectCount;
+
+                if (isComplete)
+                {
+                    CollectedPoolDataManager.Instance.AddCollected(_collectedCount);
+                }
+
+                return isComplete;
             }
 
             return false;
@@ -98,7 +106,7 @@ namespace RunTime.Controllers.Pool
 
         private void OnTriggerEnter(Collider other)
         {
-            if (!other.CompareTag(collectable)) return;
+            if (!other.CompareTag(_collectable)) return;
             {
                 IncreaseCollectedAmount();
                 SetCollectedAmountToPool();
@@ -117,7 +125,7 @@ namespace RunTime.Controllers.Pool
 
         private void OnTriggerExit(Collider other)
         {
-            if (!other.CompareTag(collectable)) return;
+            if (!other.CompareTag(_collectable)) return;
             {
                 DecreaseCollectedAmount();
                 SetCollectedAmountToPool();
@@ -139,5 +147,7 @@ namespace RunTime.Controllers.Pool
         {
             UnSubscribeEvents();
         }
+        
+        
     }
 }
