@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2312668005778330184
 Transform:
   m_ObjectHideFlags: 0
@@ -267,6 +267,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2c03e47dd5409e83f4420d3fb0d168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &4739822380315466631 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8620569437847152550, guid: 8a891553096842044bb6c9bdbc4f2c65,
+    type: 3}
+  m_PrefabInstance: {fileID: 3919628581391678497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5739639365056476102 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8773604688476737511, guid: 8a891553096842044bb6c9bdbc4f2c65,
@@ -689,6 +695,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniGameArea
       objectReference: {fileID: 0}
+    - target: {fileID: 6597212352694323674, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
+        type: 3}
+      propertyPath: m_Name
+      value: MiniGameGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719097681384401233, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
+        type: 3}
+      propertyPath: miniGameId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8719097681384401233, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
+        type: 3}
+      propertyPath: minigameArea
+      value: 
+      objectReference: {fileID: 7456684992587928643}
+    - target: {fileID: 8719097681384401233, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
+        type: 3}
+      propertyPath: pickerTransform
+      value: 
+      objectReference: {fileID: 4739822380315466631}
+    - target: {fileID: 8719097681384401233, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
+        type: 3}
+      propertyPath: maxTravelDistance
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 8719097681384401233, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
         type: 3}
       propertyPath: movementController
@@ -712,6 +743,12 @@ PrefabInstance:
 --- !u!4 &5882439455879020524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1987178686186091232, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
+    type: 3}
+  m_PrefabInstance: {fileID: 5346194937055563020}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7456684992587928643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3263430251904031055, guid: 1ec5dfa8d12b8d54db60edbc12f60ae9,
     type: 3}
   m_PrefabInstance: {fileID: 5346194937055563020}
   m_PrefabAsset: {fileID: 0}

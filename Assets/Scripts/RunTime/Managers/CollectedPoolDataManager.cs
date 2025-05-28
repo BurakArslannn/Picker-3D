@@ -7,9 +7,9 @@ namespace RunTime.Managers
     {
         public static CollectedPoolDataManager Instance;
 
-        private int _totalCollected;
+        private byte _totalCollected;
 
-        public int TotalCollected => _totalCollected;
+        public byte TotalCollected => _totalCollected;
 
         private void Awake()
         {
@@ -26,8 +26,7 @@ namespace RunTime.Managers
         public void AddCollected(byte amount)
         {
             _totalCollected += amount;
-            UISignals.Instance.onSetScore?.Invoke(amount);
-
+            UISignals.Instance.onSetScore?.Invoke(_totalCollected );
         }
 
         public void ResetCollected()

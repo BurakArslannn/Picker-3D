@@ -1,9 +1,23 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace RunTime.Controllers.MiniGame
+
 {
     public class ControllerToCalculateTheDistanceThatThePickerCanTravel : MonoBehaviour
     {
-        
+        /// <summary>
+        /// Minigame alanına girildiğinde toplanan eşyaların sayısına erişip toplam eşyaların sayısına oranını bulup o orana 
+        /// göre picker'in hareket edebileceği mesafeyi belirliyoruz. O mesafeye gelince de win panelini açacağız.
+        /// </summary>
+        #region Self Variables
+
+        #region Serialized Variables
+
+        [SerializeField] private Transform minigameArea;
+
+        #endregion
+
+        #endregion
     }
 }

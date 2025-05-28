@@ -59,6 +59,7 @@
     <Compile Include="Assets\TempAssets\_MK\MKTextureChannelPacker\MKTextureChannelPacker.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\UI\ProgressPanelController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Commands\Level\OnLevelDestroyerCommand.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\UIManager.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\RuntimeDemo\RuntimeTest.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PlayerData.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectCycler.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\MiniGame\Controller to calculateTheDistanceThatThePickerCan travel.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\UIPanelController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Uniform.cs" />

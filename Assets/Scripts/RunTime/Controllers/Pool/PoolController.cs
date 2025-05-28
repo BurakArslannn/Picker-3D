@@ -28,7 +28,7 @@ namespace RunTime.Controllers.Pool
         #region Private Variables
 
         [ShowInInspector] private PoolData _data;
-        [ShowInInspector] private byte _collectedCount;
+        public byte _collectedCount;
 
         private readonly string _collectable = "Collectable";
 
@@ -84,14 +84,14 @@ namespace RunTime.Controllers.Pool
 
         private void SetRequiredAmountText()
         {
-            poolText.text = $"0/{_data.RequiredObjectCount}";
+            poolText.text = $"0/{_data.requiredObjectCount}";
         }
 
         public bool TakeResults(byte managerStageValues)
         {
             if (stageID == managerStageValues)
             {
-                bool isComplete = _collectedCount >= _data.RequiredObjectCount;
+                bool isComplete = _collectedCount >= _data.requiredObjectCount;
 
                 if (isComplete)
                 {
@@ -120,7 +120,7 @@ namespace RunTime.Controllers.Pool
 
         private void SetCollectedAmountToPool()
         {
-            poolText.text = $"{_collectedCount}/{_data.RequiredObjectCount}";
+            poolText.text = $"{_collectedCount}/{_data.requiredObjectCount}";
         }
 
         private void OnTriggerExit(Collider other)
@@ -147,7 +147,5 @@ namespace RunTime.Controllers.Pool
         {
             UnSubscribeEvents();
         }
-        
-        
     }
 }

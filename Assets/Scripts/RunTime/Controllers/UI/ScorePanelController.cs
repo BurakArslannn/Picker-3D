@@ -37,10 +37,10 @@ namespace RunTime.Controllers.UI
 
         private void OnDisable()
         {
-            UnSubcscribeEvents();
+            UnSubscribeEvents();
         }
 
-        private void UnSubcscribeEvents()
+        private void UnSubscribeEvents()
         {
             UISignals.Instance.onSetScore -= OnSetLevelValue;
         }

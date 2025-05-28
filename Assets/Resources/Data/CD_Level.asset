@@ -14,10 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Levels:
   - PoolList:
-    - RequiredObjectCount: 10
-    - RequiredObjectCount: 10
-    - RequiredObjectCount: 10
+    - requiredObjectCount: 10
+    - requiredObjectCount: 10
+    - requiredObjectCount: 10
+    ObjectList:
+    - totalObjectCount: 108
   - PoolList:
-    - RequiredObjectCount: 10
-    - RequiredObjectCount: 10
-    - RequiredObjectCount: 10
+    - requiredObjectCount: 10
+    - requiredObjectCount: 10
+    - requiredObjectCount: 10
+    ObjectList:
+    - totalObjectCount: 130
+  - PoolList:
+    - requiredObjectCount: 10
+    - requiredObjectCount: 10
+    - requiredObjectCount: 10
+    ObjectList:
+    - totalObjectCount: 200

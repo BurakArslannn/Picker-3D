@@ -47,7 +47,7 @@ namespace Runtime.Managers
 
         private LevelData GetLevelData()
         {
-            return Resources.Load<CD_Level>("Data/CD_Level").Levels[_currentLevel];
+            return Resources.Load<CdLevel>("Data/CD_Level").Levels[_currentLevel];
         }
 
         private byte GetActiveLevel()
@@ -72,6 +72,7 @@ namespace Runtime.Managers
         [Button]
         private void OnNextLevel()
         {
+            Debug.LogWarning("OnNextLevel");
             _currentLevel++;
             CoreGameSignals.Instance.onClearActiveLevel?.Invoke();
             CoreGameSignals.Instance.onReset?.Invoke();
@@ -108,7 +109,7 @@ namespace Runtime.Managers
         private void Start()
         {
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
-            CoreUISignals.Instance.onOpenpanel?.Invoke(UIPanelTypes.Start, 1);
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1);
         }
     }
 }

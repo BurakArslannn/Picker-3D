@@ -7,16 +7,24 @@ namespace RunTime.Data.ValueObjects
     public struct LevelData
     {
         public List<PoolData> PoolList;
+        public List<LevelObjectData> ObjectList;
 
-        public LevelData(List<PoolData> datas)
+        public LevelData(List<PoolData> datas, List<LevelObjectData> objects)
         {
             PoolList = datas;
+            ObjectList = objects;
         }
     }
 
     [Serializable]
     public struct PoolData
     {
-        public byte RequiredObjectCount;
+        public byte requiredObjectCount;
+    }
+
+    [Serializable]
+    public struct LevelObjectData
+    {
+        public byte totalObjectCount;
     }
 }

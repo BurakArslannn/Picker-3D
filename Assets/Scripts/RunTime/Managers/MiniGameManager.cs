@@ -35,8 +35,9 @@ namespace RunTime.Managers
         private void OnMiniGameAreaEntered()
         {
             miniGameController.SpeedUpPicker();
+            miniGameController.CalculateTravelDistance();
         }
-        
+
         private void UnSubscribeEvents()
         {
             CoreGameSignals.Instance.onMiniGameAreaEntered -= OnMiniGameAreaEntered;
