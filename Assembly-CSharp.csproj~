@@ -54,8 +54,10 @@
     <Compile Include="Assets\Scripts\RunTime\Enums\UIEventSubscriptionTypes.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXLightFade.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\ScorePanelController.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\InventoryData.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerPhysicsController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\MiniGameManager.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\MiniGame\CoinController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKTextureChannelPacker\MKTextureChannelPacker.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\PlayerManager.cs" />
@@ -70,10 +72,12 @@
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\API\NonConvexColliderAPI.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Level.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Common.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Inventory.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
     <Compile Include="Assets\Scripts\RunTime\Signals\CoreUISignals.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\LevelPanelController.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\UI\CoinsPanelController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\MiniGame\MiniGameController.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\NonConvexColliderComponent.cs" />
@@ -89,13 +93,13 @@
     <Compile Include="Assets\TempAssets\_MK\MKMeshUtility\MKMeshUtility.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\InputData.cs" />
     <Compile Include="Assets\Scripts\RunTime\Extentions\LockCinemachineAxis.cs" />
+    <Compile Include="Assets\TempAssets\BTM_Assets\BTM_Items_Gems\Scripts\SimpleGemsAnim.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerMeshController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Input.cs" />
     <Compile Include="Assets\Scripts\RunTime\Enums\UIPanelTypes.cs" />
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\RuntimeDemo\RuntimeTest.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PlayerData.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectCycler.cs" />
-    <Compile Include="Assets\Scripts\RunTime\Controllers\MiniGame\Controller to calculateTheDistanceThatThePickerCan travel.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\UIPanelController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Uniform.cs" />
@@ -873,11 +877,20 @@
     <Reference Include="Unity.Burst">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
+    <Reference Include="UniTask.TextMeshPro">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Addressables">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
@@ -899,6 +912,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
@@ -950,6 +966,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\UniTask.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>C:\Users\Burak\Desktop\Picker3D\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>

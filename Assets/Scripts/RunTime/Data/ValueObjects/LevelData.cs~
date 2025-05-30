@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine.Serialization;
+using RunTime.Enums;
 
 namespace RunTime.Data.ValueObjects
 {
@@ -9,11 +9,13 @@ namespace RunTime.Data.ValueObjects
     {
         public List<PoolData> PoolList;
         public List<LevelObjectData> ObjectList;
+        public List<CoinData> CoinDatas;
 
-        public LevelData(List<PoolData> datas, List<LevelObjectData> objects)
+        public LevelData(List<PoolData> datas, List<LevelObjectData> objects, List<CoinData> coinDatas)
         {
             PoolList = datas;
             ObjectList = objects;
+            CoinDatas = coinDatas;
         }
     }
 
@@ -27,5 +29,13 @@ namespace RunTime.Data.ValueObjects
     public struct LevelObjectData
     {
         public byte totalObjectCount;
+    }
+
+    [Serializable]
+    public struct CoinData
+    {
+        public byte levelID;
+        public CoinType coinType;
+        public int coinValue;
     }
 }

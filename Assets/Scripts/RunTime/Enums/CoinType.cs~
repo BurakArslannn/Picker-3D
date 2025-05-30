@@ -1,0 +1,10 @@
+namespace RunTime.Enums
+{
+    public enum CoinType
+    {
+        Green,
+        Pink,
+        Red,
+        Yellow
+    }
+}

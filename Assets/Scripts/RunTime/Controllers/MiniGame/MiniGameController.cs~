@@ -19,7 +19,6 @@ namespace RunTime.Controllers.MiniGame
         [SerializeField] private Transform minigameArea;
         [SerializeField] private Transform pickerTransform;
         [SerializeField] private byte miniGameId;
-
         [SerializeField] private float maxTravelDistance;
 
         #endregion
@@ -71,13 +70,13 @@ namespace RunTime.Controllers.MiniGame
 
         private async UniTaskVoid CheckWinConditionAsync()
         {
-            // Her frame bekle ve picker pozisyonunu kontrol et
             while (pickerTransform.position.z < _targetZPosition)
             {
-                await UniTask.Yield(); // Bir frame bekle
+                await UniTask.Yield();
             }
 
             CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+            CoreGameSignals.Instance.onMinigameCompleted?.Invoke();
         }
 
 
@@ -98,7 +97,7 @@ namespace RunTime.Controllers.MiniGame
             Debug.Log(
                 $"Total object: {_totalObjectCounts.totalObjectCount}, Collected: {_collectedObjectCount}, Ratio: {ratio}, Target Z: {_targetZPosition}");
 
-            CheckWinConditionAsync().Forget(); // UniTask başlat
+            CheckWinConditionAsync().Forget();
         }
     }
 }

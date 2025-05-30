@@ -32,6 +32,7 @@ namespace RunTime.Managers
             CoreGameSignals.Instance.onMiniGameAreaEntered += OnMiniGameAreaEntered;
         }
 
+
         private void OnMiniGameAreaEntered()
         {
             miniGameController.SpeedUpPicker();

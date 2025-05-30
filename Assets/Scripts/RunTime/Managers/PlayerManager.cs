@@ -1,10 +1,12 @@
 using Runtime.Commands.Player;
+using RunTime.Controllers.MiniGame;
 using RunTime.Controllers.Player;
 using RunTime.Data.UnityObjects;
 using RunTime.Data.ValueObjects;
 using RunTime.Keys;
 using RunTime.Signals;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Runtime.Managers
 {
@@ -25,6 +27,7 @@ namespace Runtime.Managers
         [SerializeField] private PlayerMovementController movementController;
         [SerializeField] private PlayerMeshController meshController;
         [SerializeField] private PlayerPhysicsController physicsController;
+        [SerializeField] private CoinPhysicController coinPhysicController;
 
         #endregion
 

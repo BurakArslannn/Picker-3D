@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using RunTime.Enums;
 
 namespace RunTime.Data.ValueObjects
 {
@@ -27,4 +28,5 @@ namespace RunTime.Data.ValueObjects
     {
         public byte totalObjectCount;
     }
+    
 }

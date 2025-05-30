@@ -19,7 +19,6 @@ namespace RunTime.Controllers.MiniGame
         [SerializeField] private Transform minigameArea;
         [SerializeField] private Transform pickerTransform;
         [SerializeField] private byte miniGameId;
-
         [SerializeField] private float maxTravelDistance;
 
         #endregion
@@ -77,6 +76,10 @@ namespace RunTime.Controllers.MiniGame
             }
 
             CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+            Debug.LogWarning("Executed ----> onLevelSuccessful");
+
+            CoreGameSignals.Instance.onMinigameCompleted?.Invoke();
+            Debug.LogWarning("Executed ----> onMinigameCompleted");
         }
 
 

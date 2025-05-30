@@ -8,5 +8,6 @@ namespace RunTime.Signals
         public UnityAction<byte> onSetStageColor = delegate { };
         public UnityAction<byte> onSetLevelValue = delegate { };
         public UnityAction onPlay = delegate { };
+        public UnityAction<byte> onSetScore = delegate { };
     }
 }

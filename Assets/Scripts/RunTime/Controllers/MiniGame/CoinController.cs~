@@ -1,0 +1,12 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace RunTime.Controllers.MiniGame
+{
+    public class CoinController : MonoBehaviour
+    {
+
+        [SerializeField] private List<GameObject> coins;
+       
+    }
+}

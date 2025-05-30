@@ -1,7 +1,12 @@
+using System;
+
 namespace RunTime.Enums
 {
+    [Serializable]
     public enum GameStates
     {
-        
+        Idle,
+        Moving,
+        Final
     }
 }

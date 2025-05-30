@@ -1,0 +1,11 @@
+using System;
+using RunTime.Enums;
+
+namespace RunTime.Data.ValueObjects
+{
+    [Serializable]
+    public struct CoinData
+    {
+        public CoinType coinType;
+    }
+}

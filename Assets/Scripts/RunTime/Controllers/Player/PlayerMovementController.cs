@@ -100,7 +100,6 @@ namespace RunTime.Controllers.Player
             _isReadyToPlay = false;
         }
 
-        //Minigame
         internal void MultiplyForwardSpeed(float value)
         {
             value = value * _data.ForwardSpeed;

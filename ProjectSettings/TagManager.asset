@@ -9,6 +9,10 @@ TagManager:
   - Minigame Area
   - Collectable
   - Pool Area
+  - BlueCoin
+  - GreenCoin
+  - OrangeCoin
+  - PinkCoin
   layers:
   - Default
   - TransparentFX

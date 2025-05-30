@@ -11,6 +11,7 @@ namespace RunTime.Managers
         #region Serialized Variables
 
         [SerializeField] private MiniGameController miniGameController;
+        [SerializeField] private CoinPhysicController coinPhysicController;
 
         #endregion
 
@@ -32,11 +33,13 @@ namespace RunTime.Managers
             CoreGameSignals.Instance.onMiniGameAreaEntered += OnMiniGameAreaEntered;
         }
 
+
         private void OnMiniGameAreaEntered()
         {
             miniGameController.SpeedUpPicker();
+            miniGameController.CalculateTravelDistance();
         }
-        
+
         private void UnSubscribeEvents()
         {
             CoreGameSignals.Instance.onMiniGameAreaEntered -= OnMiniGameAreaEntered;
