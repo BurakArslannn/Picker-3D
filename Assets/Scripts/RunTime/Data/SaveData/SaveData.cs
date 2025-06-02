@@ -1,0 +1,11 @@
+using System;
+
+namespace RunTime.Data.SaveData
+{
+    [Serializable]
+    public class SaveData
+    {
+        public byte lastLevelIndex;
+        public int coinCount;
+    }
+}

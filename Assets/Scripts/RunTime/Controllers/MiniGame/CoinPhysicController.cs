@@ -1,24 +1,33 @@
-using System.Collections.Generic;
-using RunTime.Data.UnityObjects;
-using RunTime.Data.ValueObjects;
+using RunTime.Managers;
 using RunTime.Signals;
 using UnityEngine;
+using System.Collections.Generic;
+using Sirenix.OdinInspector;
 
 namespace RunTime.Controllers.MiniGame
 {
     public class CoinPhysicController : MonoBehaviour
     {
+        #region Variables
+
         #region Self Variables
 
         #region Serialized Variables
 
-        [SerializeField] private List<GameObject> coins;
         [SerializeField] private Collider pickerCollider;
+        public List<Collider> coins;
+
+        #endregion
 
         #region Private Variables
 
-        private int _cointValue;
-        private InventoryData _inventoryData;
+        [ShowInInspector] private int _currentCoins;
+        [ShowInInspector] private int _newTotal;
+
+        #endregion
+
+        #endregion
+
 
         private readonly string _blueCoin = "BlueCoin";
         private readonly string _pinkCoin = "PinkCoin";
@@ -27,52 +36,27 @@ namespace RunTime.Controllers.MiniGame
 
         #endregion
 
-        #endregion
-
-        #endregion
-
-        private void OnEnable()
-        {
-            CoreGameSignals.Instance.onMinigameCompleted += OnMinigameCompleted;
-        }
-
-        private void OnMinigameCompleted()
+        internal void OnMinigameCompleted()
         {
             OnTriggerEnter(pickerCollider);
         }
 
-        private void OnDisable()
-        {
-            CoreGameSignals.Instance.onMinigameCompleted -= OnMinigameCompleted;
-        }
-
-
         private void OnTriggerEnter(Collider other)
         {
-            _inventoryData = Resources.Load<CD_Inventory>("Data/CD_Inventory").InventoryData;
+            int addCoin = 0;
 
-            if (other.CompareTag(_greenCoin))
-            {
-                _inventoryData.cointCount += 100;
-            }
-            else if (other.CompareTag(_blueCoin))
-            {
-                _inventoryData.cointCount += 400;
-            }
-            else if (other.CompareTag(_pinkCoin))
-            {
-                _inventoryData.cointCount += 300;
-            }
-            else if (other.CompareTag(_orangeCoin))
-            {
-                _inventoryData.cointCount += 200;
-            }
-            else
-            {
-                return;
-            }
+            if (other.CompareTag(_greenCoin)) addCoin = 100;
+            else if (other.CompareTag(_blueCoin)) addCoin = 400;
+            else if (other.CompareTag(_pinkCoin)) addCoin = 300;
+            else if (other.CompareTag(_orangeCoin)) addCoin = 200;
+            else return;
 
-            UISignals.Instance.onSetCoinCount?.Invoke(_inventoryData.cointCount);
+            _currentCoins = SaveManager.LoadTotalCoin();
+            _newTotal = _currentCoins + addCoin;
+
+            SaveManager.SaveTotalCoin(_newTotal);
+
+            UISignals.Instance.onSetMiniGameCoinCount?.Invoke(addCoin);
         }
     }
 }

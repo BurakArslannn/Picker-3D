@@ -16,6 +16,7 @@ namespace RunTime.Controllers.MiniGame
         #region Serialized  Variables
 
         [SerializeField] private PlayerMovementController movementController;
+        [SerializeField] private CoinPhysicController coinPhysicController;
         [SerializeField] private Transform minigameArea;
         [SerializeField] private Transform pickerTransform;
         [SerializeField] private byte miniGameId;
@@ -39,6 +40,11 @@ namespace RunTime.Controllers.MiniGame
         private void Awake()
         {
             _totalObjectCounts = GetTotalObjectCounts();
+
+            foreach (var col in coinPhysicController.coins)
+            {
+                col.enabled = false;
+            }
         }
 
         private LevelObjectData GetTotalObjectCounts()
@@ -75,8 +81,16 @@ namespace RunTime.Controllers.MiniGame
                 await UniTask.Yield();
             }
 
-            CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+            movementController.MultiplyForwardSpeed(0);
+
+            foreach (var col in coinPhysicController.coins)
+            {
+                col.enabled = true;
+            }
+
             CoreGameSignals.Instance.onMinigameCompleted?.Invoke();
+            CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+            _isCheckingWin = false;
         }
 
 
@@ -85,6 +99,7 @@ namespace RunTime.Controllers.MiniGame
             movementController.MultiplyForwardSpeed(3f);
             Debug.LogWarning("speed up");
         }
+
 
         internal void CalculateTravelDistance()
         {

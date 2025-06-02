@@ -24,7 +24,7 @@ namespace RunTime.Controllers.UI
 
         private void SubsribeEvents()
         {
-            UISignals.Instance.onSetCoinCount += SetCointsText;
+            UISignals.Instance.onSetMiniGameCoinCount += SetCointsText;
         }
 
         private void SetCointsText(int coins)
@@ -39,7 +39,7 @@ namespace RunTime.Controllers.UI
 
         private void UnSubscribeEvents()
         {
-            UISignals.Instance.onSetCoinCount -= SetCointsText;
+            UISignals.Instance.onSetMiniGameCoinCount -= SetCointsText;
         }
     }
 }

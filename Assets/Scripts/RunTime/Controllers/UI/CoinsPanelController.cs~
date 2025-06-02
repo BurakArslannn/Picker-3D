@@ -1,4 +1,3 @@
-using System;
 using RunTime.Signals;
 using TMPro;
 using UnityEngine;

@@ -1,0 +1,61 @@
+using RunTime.Data.SaveData;
+using System.IO;
+using UnityEngine;
+
+namespace RunTime.Managers
+{
+    public static class SaveManager
+    {
+        private static readonly string SavePath = Application.persistentDataPath + "/saveData.json";
+
+        private static SaveData LoadData()
+        {
+            if (!File.Exists(SavePath))
+                return new SaveData();
+
+            string json = File.ReadAllText(SavePath);
+            return JsonUtility.FromJson<SaveData>(json);
+        }
+
+        private static void SaveData(SaveData data)
+        {
+            string json = JsonUtility.ToJson(data);
+            File.WriteAllText(SavePath, json);
+        }
+
+        public static void SaveTotalCoin(int coinValue)
+        {
+            SaveData data = LoadData();
+            data.coinCount = coinValue;
+            SaveData(data);
+        }
+
+        public static int LoadTotalCoin()
+        {
+            return LoadData().coinCount;
+        }
+
+        public static void SaveLevelIndex(byte levelIndex)
+        {
+            SaveData data = LoadData();
+            data.lastLevelIndex = levelIndex;
+            SaveData(data);
+        }
+
+        public static byte LoadLevelIndex()
+        {
+            return LoadData().lastLevelIndex;
+        }
+
+        public static bool HasSaveData()
+        {
+            return File.Exists(SavePath);
+        }
+
+        public static void ResetLevelProgress()
+        {
+            if (File.Exists(SavePath))
+                File.Delete(SavePath);
+        }
+    }
+}

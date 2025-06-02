@@ -453,6 +453,7 @@ MonoBehaviour:
   movementController: {fileID: 8773604688476737511}
   meshController: {fileID: 5789146457797339064}
   physicsController: {fileID: 0}
+  coinPhysicController: {fileID: 0}
 --- !u!114 &8773604688476737511
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ namespace RunTime.Signals
         public UnityAction<byte> onSetLevelValue = delegate { };
         public UnityAction onPlay = delegate { };
         public UnityAction<byte> onSetScore = delegate { };
-        public UnityAction<int> onSetCoinCount = delegate { };
+        public UnityAction<int> onSetMiniGameCoinCount = delegate { };
+        public UnityAction<int> onSetTotalCoinCount = delegate { };
     }
 }

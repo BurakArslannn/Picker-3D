@@ -1,53 +1,65 @@
 using RunTime.Controllers.MiniGame;
+using RunTime.Data.UnityObjects;
+using RunTime.Data.ValueObjects;
 using RunTime.Signals;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace RunTime.Managers
 {
     public class MiniGameManager : MonoBehaviour
     {
-        #region Self Variables
-
-        #region Serialized Variables
-
         [SerializeField] private MiniGameController miniGameController;
         [SerializeField] private CoinPhysicController coinPhysicController;
 
-        #endregion
+        private void Awake()
+        {
+            if (!SaveManager.HasSaveData())
+            {
+                InventoryData defaultData = Resources.Load<CD_Inventory>("Data/CD_Inventory").InventoryData;
+                SaveManager.SaveTotalCoin(defaultData.cointCount);
+            }
+        }
 
-        #region Private Variables
+        private void Start()
+        {
+            // UI coin sayısını oyun başında göster
+            int totalCoins = SaveManager.LoadTotalCoin();
+            UISignals.Instance.onSetTotalCoinCount?.Invoke(totalCoins);
+        }
 
-        private byte _collectedObjectCount;
-
-        #endregion
-
-        #endregion
+        [Button]
+        private void ResetCoin()
+        {
+            SaveManager.ResetCoinValue();
+        }
 
         private void OnEnable()
         {
             SubscribeEvents();
         }
 
+        private void OnDisable()
+        {
+            UnSubscribeEvents();
+        }
+
         private void SubscribeEvents()
         {
             CoreGameSignals.Instance.onMiniGameAreaEntered += OnMiniGameAreaEntered;
-        }
-
-
-        private void OnMiniGameAreaEntered()
-        {
-            miniGameController.SpeedUpPicker();
-            miniGameController.CalculateTravelDistance();
+            CoreGameSignals.Instance.onMinigameCompleted += coinPhysicController.OnMinigameCompleted;
         }
 
         private void UnSubscribeEvents()
         {
             CoreGameSignals.Instance.onMiniGameAreaEntered -= OnMiniGameAreaEntered;
+            CoreGameSignals.Instance.onMinigameCompleted -= coinPhysicController.OnMinigameCompleted;
         }
 
-        private void OnDisable()
+        private void OnMiniGameAreaEntered()
         {
-            UnSubscribeEvents();
+            miniGameController.SpeedUpPicker();
+            miniGameController.CalculateTravelDistance();
         }
     }
 }

@@ -1,18 +1,14 @@
 using System;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace RunTime.Data.ValueObjects
 {
     [Serializable]
     public struct InventoryData
     {
-        public int cointCount;
-        public List<GameObject> Coins;
+        public int cointCount = 0;
 
-        public InventoryData(int cointValue, List<GameObject> coins)
+        public InventoryData(int cointValue)
         {
-            Coins = coins;
             cointCount = cointValue;
         }
     }

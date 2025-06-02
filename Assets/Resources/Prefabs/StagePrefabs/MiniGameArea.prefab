@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4740936168799792761}
   - component: {fileID: 4786971710687091389}
   - component: {fileID: 1551748376443527427}
-  - component: {fileID: 8144427049840255279}
   m_Layer: 0
   m_Name: Orange (4)
   m_TagString: OrangeCoin
@@ -84,27 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8144427049840255279
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310283641622507471}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &378549446258277897
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +127,6 @@ GameObject:
   - component: {fileID: 7578254879794568858}
   - component: {fileID: 9132406881048084868}
   - component: {fileID: 781812266905416594}
-  - component: {fileID: 5316828886416915311}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -222,27 +199,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5316828886416915311
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410534746248849981}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &516995906752046752
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +210,6 @@ GameObject:
   - component: {fileID: 5919242881914134388}
   - component: {fileID: 4712571642183514138}
   - component: {fileID: 5706478531260429968}
-  - component: {fileID: 2046991926306596464}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -327,27 +282,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2046991926306596464
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516995906752046752}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &635236837921680083
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +293,6 @@ GameObject:
   - component: {fileID: 1960966316684190973}
   - component: {fileID: 4336261254364552454}
   - component: {fileID: 5343657852533172597}
-  - component: {fileID: 1331050187820757043}
   m_Layer: 0
   m_Name: Green (5)
   m_TagString: GreenCoin
@@ -432,27 +365,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1331050187820757043
-BoxCollider:
+--- !u!1 &712602977759471771
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635236837921680083}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947593468068688405}
+  - component: {fileID: 262566566024924153}
+  - component: {fileID: 2911904343411085520}
+  m_Layer: 0
+  m_Name: Blue (2)
+  m_TagString: BlueCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &947593468068688405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712602977759471771}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -5.21, y: -0, z: 44.78}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6037959285680012871}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &262566566024924153
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712602977759471771}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &2911904343411085520
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712602977759471771}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 26380c2d3da581c429f61e9acb172235, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1053645352084819911
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,9 +457,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1474625701208453805}
+  - component: {fileID: 6391745068463931711}
   m_Layer: 0
   m_Name: PinkCoins(300$)
-  m_TagString: Untagged
+  m_TagString: PinkCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,6 +490,27 @@ Transform:
   - {fileID: 3473419163135493461}
   m_Father: {fileID: 4756256430717292759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6391745068463931711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053645352084819911}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.849943, y: 1, z: 25.792465}
+  m_Center: {x: -0.021502256, y: 0, z: 30.92}
 --- !u!1 &1184885389414905683
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +627,6 @@ GameObject:
   - component: {fileID: 4623468931583669782}
   - component: {fileID: 8671521697739728331}
   - component: {fileID: 6456615313755207048}
-  - component: {fileID: 1177110529362178102}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -683,27 +699,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1177110529362178102
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1442750956151104360}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1513422338521150728
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +710,6 @@ GameObject:
   - component: {fileID: 5361986098595489473}
   - component: {fileID: 775446495681060319}
   - component: {fileID: 3694258499536627663}
-  - component: {fileID: 6342561681857194500}
   m_Layer: 0
   m_Name: Orange
   m_TagString: OrangeCoin
@@ -732,7 +726,7 @@ Transform:
   m_GameObject: {fileID: 1513422338521150728}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.5, y: 0, z: 19.49}
+  m_LocalPosition: {x: -5.14, y: -0, z: 23.95}
   m_LocalScale: {x: 1, y: 1, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -788,27 +782,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6342561681857194500
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513422338521150728}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1820129934270524884
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +866,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1843117420061940694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5973937815279687165}
+  - component: {fileID: 1704033648420316762}
+  - component: {fileID: 4965607937839656001}
+  m_Layer: 0
+  m_Name: Orange (12)
+  m_TagString: OrangeCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5973937815279687165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843117420061940694}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -3.92, y: -0, z: 44.34}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2702533911993848056}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &1704033648420316762
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843117420061940694}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &4965607937839656001
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843117420061940694}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7669597e2cd68b246afed9abf2c0d93f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1912777875501189634
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +960,6 @@ GameObject:
   - component: {fileID: 5507736117321102832}
   - component: {fileID: 226491845376088798}
   - component: {fileID: 1419996636247366681}
-  - component: {fileID: 7750080583480760959}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -977,27 +1032,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7750080583480760959
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912777875501189634}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1955079062801599007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1148,6 @@ GameObject:
   - component: {fileID: 3714394225106789806}
   - component: {fileID: 2461297654177236336}
   - component: {fileID: 6416709196750981214}
-  - component: {fileID: 851819388035843639}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -1187,27 +1220,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &851819388035843639
-BoxCollider:
+--- !u!1 &2554520942908155515
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2469933558568979965}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8605416474450855307}
+  - component: {fileID: 2261329647980008252}
+  - component: {fileID: 6931744498716839221}
+  m_Layer: 0
+  m_Name: Orange (10)
+  m_TagString: OrangeCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8605416474450855307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554520942908155515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.17, y: -0, z: 27.87}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2702533911993848056}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &2261329647980008252
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554520942908155515}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &6931744498716839221
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2554520942908155515}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7669597e2cd68b246afed9abf2c0d93f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2588376844231955367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1314,6 @@ GameObject:
   - component: {fileID: 1978031171935676024}
   - component: {fileID: 1219977634726151520}
   - component: {fileID: 8049056054665598398}
-  - component: {fileID: 7123095154980337011}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -1292,27 +1386,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7123095154980337011
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2588376844231955367}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2721812556593192774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,9 +1535,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6037959285680012871}
+  - component: {fileID: 6882974797886488290}
   m_Layer: 0
   m_Name: BlueCoins(400$)
-  m_TagString: Untagged
+  m_TagString: BlueCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1490,10 +1564,36 @@ Transform:
   - {fileID: 1873596253522971179}
   - {fileID: 5314386589404294436}
   - {fileID: 3956787877249943764}
+  - {fileID: 947593468068688405}
   - {fileID: 1978031171935676024}
   - {fileID: 1756917407686508096}
+  - {fileID: 2829952677169704735}
+  - {fileID: 4745778229480411693}
+  - {fileID: 7013840943164669751}
+  - {fileID: 1419965797103781343}
   m_Father: {fileID: 4756256430717292759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6882974797886488290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908105204346003880}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.849943, y: 1, z: 32.51159}
+  m_Center: {x: -0.021502495, y: 0, z: 35.9}
 --- !u!1 &2917739547919455368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1605,6 @@ GameObject:
   - component: {fileID: 5817092994620260196}
   - component: {fileID: 7376622758494351943}
   - component: {fileID: 6457403346499183017}
-  - component: {fileID: 7060321014850045692}
   m_Layer: 0
   m_Name: Green (6)
   m_TagString: GreenCoin
@@ -1578,27 +1677,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7060321014850045692
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2917739547919455368}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3004108777511544174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,7 +1688,6 @@ GameObject:
   - component: {fileID: 5838092570805022054}
   - component: {fileID: 6078443234599237146}
   - component: {fileID: 4631798763089540124}
-  - component: {fileID: 5363223588784756993}
   m_Layer: 0
   m_Name: Green (2)
   m_TagString: GreenCoin
@@ -1683,27 +1760,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5363223588784756993
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3004108777511544174}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3044223832482424568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,7 +1771,6 @@ GameObject:
   - component: {fileID: 5937337773466994478}
   - component: {fileID: 3703840077592861983}
   - component: {fileID: 4473314996106720146}
-  - component: {fileID: 5280960200908435073}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -1788,27 +1843,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5280960200908435073
-BoxCollider:
+--- !u!1 &3241032625454003381
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3044223832482424568}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4524968845329021110}
+  - component: {fileID: 4232992712861159695}
+  - component: {fileID: 836531577282212548}
+  m_Layer: 0
+  m_Name: Green (11)
+  m_TagString: GreenCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4524968845329021110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241032625454003381}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 3.27, y: -0, z: 19.29}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6921494547590455830}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &4232992712861159695
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241032625454003381}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &836531577282212548
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3241032625454003381}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 295821634a833294693d2f4e873f36c7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3266252034674407984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1937,6 @@ GameObject:
   - component: {fileID: 1553080491017349420}
   - component: {fileID: 6017890216624790718}
   - component: {fileID: 7781875827899758159}
-  - component: {fileID: 1539426203320123392}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -1893,27 +2009,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1539426203320123392
-BoxCollider:
+--- !u!1 &3276809400173626908
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3266252034674407984}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2829952677169704735}
+  - component: {fileID: 3802026226045141079}
+  - component: {fileID: 8207009731629861802}
+  m_Layer: 0
+  m_Name: Blue (1)
+  m_TagString: BlueCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2829952677169704735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3276809400173626908}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.73, y: -0, z: 44.07}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6037959285680012871}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &3802026226045141079
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3276809400173626908}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &8207009731629861802
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3276809400173626908}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 26380c2d3da581c429f61e9acb172235, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3293656664125322248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,7 +2202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3341549438266279169}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 242}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2049,7 +2227,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGameController: {fileID: 8719097681384401233}
-  coins: {fileID: 0}
 --- !u!114 &8719097681384401233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2063,10 +2240,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementController: {fileID: 0}
-  minigameArea: {fileID: 0}
+  minigameArea: {fileID: 3263430251904031055}
   pickerTransform: {fileID: 0}
   miniGameId: 0
-  maxTravelDistance: 0
+  maxTravelDistance: 120
 --- !u!1 &4151612989920041226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,7 +2255,6 @@ GameObject:
   - component: {fileID: 1873596253522971179}
   - component: {fileID: 8431421876678244005}
   - component: {fileID: 7965538511307318522}
-  - component: {fileID: 4981688467430174043}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -2151,27 +2327,172 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4981688467430174043
-BoxCollider:
+--- !u!1 &4156973461355813689
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4151612989920041226}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419965797103781343}
+  - component: {fileID: 4383293823011622194}
+  - component: {fileID: 1449504318955437726}
+  m_Layer: 0
+  m_Name: Blue (4)
+  m_TagString: BlueCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1419965797103781343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156973461355813689}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 5.61, y: 0, z: 46.59}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6037959285680012871}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &4383293823011622194
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156973461355813689}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &1449504318955437726
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156973461355813689}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 26380c2d3da581c429f61e9acb172235, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4476964572080641421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7013840943164669751}
+  - component: {fileID: 8971808842637671163}
+  - component: {fileID: 4827617807098755518}
+  m_Layer: 0
+  m_Name: Blue (5)
+  m_TagString: BlueCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7013840943164669751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4476964572080641421}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2.61, y: -0, z: 49.01}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6037959285680012871}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &8971808842637671163
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4476964572080641421}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &4827617807098755518
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4476964572080641421}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 26380c2d3da581c429f61e9acb172235, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4541309707660624800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2504,6 @@ GameObject:
   - component: {fileID: 3822887898295916177}
   - component: {fileID: 7695681738480593726}
   - component: {fileID: 6831780644152556762}
-  - component: {fileID: 2321084922107050003}
   m_Layer: 0
   m_Name: Orange (2)
   m_TagString: OrangeCoin
@@ -2200,7 +2520,7 @@ Transform:
   m_GameObject: {fileID: 4541309707660624800}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.5, y: -0, z: 25.88}
+  m_LocalPosition: {x: 4.5, y: 0, z: 23.41}
   m_LocalScale: {x: 1, y: 1, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2256,27 +2576,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2321084922107050003
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4541309707660624800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4902509610662105508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,7 +2587,6 @@ GameObject:
   - component: {fileID: 6033195089505153776}
   - component: {fileID: 8585345438710206529}
   - component: {fileID: 9104058198281643003}
-  - component: {fileID: 8558726518733530989}
   m_Layer: 0
   m_Name: Green (4)
   m_TagString: GreenCoin
@@ -2361,27 +2659,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8558726518733530989
-BoxCollider:
+--- !u!1 &4937814997780722579
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4902509610662105508}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7633998147340144123}
+  - component: {fileID: 4422713973255049913}
+  - component: {fileID: 8490199127607195787}
+  m_Layer: 0
+  m_Name: Orange (13)
+  m_TagString: OrangeCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7633998147340144123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937814997780722579}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 4.5, y: -0, z: 42.33}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2702533911993848056}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &4422713973255049913
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937814997780722579}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &8490199127607195787
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937814997780722579}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7669597e2cd68b246afed9abf2c0d93f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5133440662984633796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,7 +2753,6 @@ GameObject:
   - component: {fileID: 2966210817862158355}
   - component: {fileID: 5019066039560439813}
   - component: {fileID: 8188047934509866177}
-  - component: {fileID: 2550025018889329783}
   m_Layer: 0
   m_Name: Orange (3)
   m_TagString: OrangeCoin
@@ -2466,27 +2825,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2550025018889329783
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5133440662984633796}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5160341164588716361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,7 +2836,6 @@ GameObject:
   - component: {fileID: 8507618702054766384}
   - component: {fileID: 8247552077251219316}
   - component: {fileID: 5253215351755169180}
-  - component: {fileID: 4816419658561460392}
   m_Layer: 0
   m_Name: Green (3)
   m_TagString: GreenCoin
@@ -2571,27 +2908,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4816419658561460392
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5160341164588716361}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5300864232079778497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2603,7 +2919,6 @@ GameObject:
   - component: {fileID: 7275462526874559522}
   - component: {fileID: 5279099089193395493}
   - component: {fileID: 22315474093757649}
-  - component: {fileID: 7083040901314288013}
   m_Layer: 0
   m_Name: Orange (8)
   m_TagString: OrangeCoin
@@ -2676,27 +2991,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7083040901314288013
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300864232079778497}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5584597968417072048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,9 +3000,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6921494547590455830}
+  - component: {fileID: 8345321809520000800}
   m_Layer: 0
   m_Name: GreenCoins(100$)
-  m_TagString: Untagged
+  m_TagString: GreenCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2735,9 +3030,31 @@ Transform:
   - {fileID: 5817092994620260196}
   - {fileID: 4093962811851925436}
   - {fileID: 8318284897245175854}
+  - {fileID: 4524968845329021110}
   - {fileID: 6924486251663894407}
   m_Father: {fileID: 4756256430717292759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8345321809520000800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5584597968417072048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.9, y: 1, z: 25.204098}
+  m_Center: {x: 0, y: 0, z: 7.7}
 --- !u!1 &5604081392301485942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +3066,6 @@ GameObject:
   - component: {fileID: 1756917407686508096}
   - component: {fileID: 30943644411366000}
   - component: {fileID: 3737324167775659010}
-  - component: {fileID: 7618523223687075916}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -2822,27 +3138,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7618523223687075916
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5604081392301485942}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5662712321136219484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +3149,6 @@ GameObject:
   - component: {fileID: 6602472863925421942}
   - component: {fileID: 9001597447414187099}
   - component: {fileID: 5062509194091634435}
-  - component: {fileID: 3873762476720589261}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -2927,27 +3221,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3873762476720589261
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5662712321136219484}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6114958434076681907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,7 +3232,6 @@ GameObject:
   - component: {fileID: 3263015256987414773}
   - component: {fileID: 4077373148088965657}
   - component: {fileID: 1537445602884025702}
-  - component: {fileID: 6379777689704861915}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -3032,27 +3304,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6379777689704861915
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6114958434076681907}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6250743634003946612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,7 +3315,6 @@ GameObject:
   - component: {fileID: 3956787877249943764}
   - component: {fileID: 7912486036441278625}
   - component: {fileID: 4065554205787567987}
-  - component: {fileID: 1163131557861814392}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -3137,27 +3387,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1163131557861814392
-BoxCollider:
+--- !u!1 &6261074315767387577
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6250743634003946612}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396841562642420732}
+  - component: {fileID: 6091541886034004199}
+  - component: {fileID: 3223762716894117636}
+  m_Layer: 0
+  m_Name: Orange (11)
+  m_TagString: OrangeCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1396841562642420732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261074315767387577}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 4.71, y: -0, z: 27.87}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2702533911993848056}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &6091541886034004199
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261074315767387577}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &3223762716894117636
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261074315767387577}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7669597e2cd68b246afed9abf2c0d93f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6359792123719477139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,7 +3481,6 @@ GameObject:
   - component: {fileID: 3621470633208840027}
   - component: {fileID: 5534054324524061667}
   - component: {fileID: 5078481455637876041}
-  - component: {fileID: 3646670157962307851}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -3242,27 +3553,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3646670157962307851
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6359792123719477139}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6360508033354554954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3564,6 @@ GameObject:
   - component: {fileID: 5727568160451967405}
   - component: {fileID: 3361020043771693564}
   - component: {fileID: 3705813396813260983}
-  - component: {fileID: 8876789033272619819}
   m_Layer: 0
   m_Name: Green (10)
   m_TagString: GreenCoin
@@ -3347,27 +3636,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8876789033272619819
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6360508033354554954}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6476154418548913729
 GameObject:
   m_ObjectHideFlags: 0
@@ -3379,7 +3647,6 @@ GameObject:
   - component: {fileID: 3973803606957741791}
   - component: {fileID: 3024622240163511206}
   - component: {fileID: 7297830527062601579}
-  - component: {fileID: 99862810539568947}
   m_Layer: 0
   m_Name: Green (1)
   m_TagString: GreenCoin
@@ -3452,27 +3719,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &99862810539568947
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6476154418548913729}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6559139232408580288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,7 +3730,6 @@ GameObject:
   - component: {fileID: 3473419163135493461}
   - component: {fileID: 45752145986168625}
   - component: {fileID: 653456032561001942}
-  - component: {fileID: 4417674460533136691}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -3557,27 +3802,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4417674460533136691
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6559139232408580288}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6587842438910940214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3587,9 +3811,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2702533911993848056}
+  - component: {fileID: 6728071940547083013}
   m_Layer: 0
   m_Name: OrangeCoins(200$)
-  m_TagString: Untagged
+  m_TagString: OrangeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3609,16 +3834,41 @@ Transform:
   m_Children:
   - {fileID: 5361986098595489473}
   - {fileID: 6377724692088313166}
+  - {fileID: 8605416474450855307}
+  - {fileID: 1396841562642420732}
   - {fileID: 3822887898295916177}
   - {fileID: 2966210817862158355}
   - {fileID: 4740936168799792761}
   - {fileID: 4816246418196511029}
   - {fileID: 7436193492944884743}
+  - {fileID: 7633998147340144123}
   - {fileID: 122826796299254452}
   - {fileID: 7275462526874559522}
   - {fileID: 873391283393307201}
+  - {fileID: 5973937815279687165}
   m_Father: {fileID: 4756256430717292759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6728071940547083013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587842438910940214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.849943, y: 1, z: 25.792465}
+  m_Center: {x: -0.021502256, y: 0, z: 34.47123}
 --- !u!1 &6597212352694323674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,7 +3882,7 @@ GameObject:
   - component: {fileID: 5341246591881171208}
   - component: {fileID: 6043016705362048013}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: MiniGameGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3735,7 +3985,6 @@ GameObject:
   - component: {fileID: 8266801197884809859}
   - component: {fileID: 7847779489555669108}
   - component: {fileID: 8077017697129875190}
-  - component: {fileID: 1366251040445839487}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -3808,27 +4057,89 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1366251040445839487
-BoxCollider:
+--- !u!1 &7027372483810392853
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6718714176833747301}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4745778229480411693}
+  - component: {fileID: 2184337729363739803}
+  - component: {fileID: 6803296807396928700}
+  m_Layer: 0
+  m_Name: Blue (3)
+  m_TagString: BlueCoin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4745778229480411693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7027372483810392853}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.73, y: -0, z: 49.01}
+  m_LocalScale: {x: 1, y: 1, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6037959285680012871}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &2184337729363739803
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7027372483810392853}
+  m_Mesh: {fileID: -6946273425408695136, guid: 8596f346ea0284b41bb900ae6f4ce276, type: 3}
+--- !u!23 &6803296807396928700
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7027372483810392853}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 26380c2d3da581c429f61e9acb172235, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7177384576860502248
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,7 +4184,6 @@ GameObject:
   - component: {fileID: 8404379802448533923}
   - component: {fileID: 5548030577125899330}
   - component: {fileID: 3353821478474287662}
-  - component: {fileID: 3516368568910341858}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -3946,27 +4256,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3516368568910341858
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7194690763821504480}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7264889144076681197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3993,7 +4282,7 @@ Transform:
   m_GameObject: {fileID: 7264889144076681197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -6.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4031,7 +4320,6 @@ GameObject:
   - component: {fileID: 4816246418196511029}
   - component: {fileID: 8843959941222251234}
   - component: {fileID: 7422912983058473411}
-  - component: {fileID: 4253257230505616962}
   m_Layer: 0
   m_Name: Orange (5)
   m_TagString: OrangeCoin
@@ -4104,27 +4392,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4253257230505616962
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7368727752479732651}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7402108358081952952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,7 +4403,6 @@ GameObject:
   - component: {fileID: 7436193492944884743}
   - component: {fileID: 7389295287418283516}
   - component: {fileID: 1809492720240365058}
-  - component: {fileID: 4321404080673231771}
   m_Layer: 0
   m_Name: Orange (6)
   m_TagString: OrangeCoin
@@ -4209,27 +4475,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4321404080673231771
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7402108358081952952}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7448060522683099662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,7 +4486,6 @@ GameObject:
   - component: {fileID: 6924486251663894407}
   - component: {fileID: 8340950429187499221}
   - component: {fileID: 4133605202053210164}
-  - component: {fileID: 3872430497799602987}
   m_Layer: 0
   m_Name: Green (9)
   m_TagString: GreenCoin
@@ -4314,27 +4558,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &3872430497799602987
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7448060522683099662}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7616627069539554753
 GameObject:
   m_ObjectHideFlags: 0
@@ -4346,7 +4569,6 @@ GameObject:
   - component: {fileID: 3422485897027179162}
   - component: {fileID: 4134004042535361969}
   - component: {fileID: 4618312621386240582}
-  - component: {fileID: 8469268908138929382}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -4419,27 +4641,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8469268908138929382
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7616627069539554753}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7706417299019945969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4451,7 +4652,6 @@ GameObject:
   - component: {fileID: 122826796299254452}
   - component: {fileID: 8453447148132942304}
   - component: {fileID: 4315955309595951854}
-  - component: {fileID: 5054765955104105535}
   m_Layer: 0
   m_Name: Orange (7)
   m_TagString: OrangeCoin
@@ -4468,7 +4668,7 @@ Transform:
   m_GameObject: {fileID: 7706417299019945969}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.54, y: -0, z: 38.8}
+  m_LocalPosition: {x: -1.32, y: -0, z: 38.8}
   m_LocalScale: {x: 1, y: 1, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4524,27 +4724,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5054765955104105535
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7706417299019945969}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7941447645002486670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,7 +4735,6 @@ GameObject:
   - component: {fileID: 6377724692088313166}
   - component: {fileID: 6366725815113301955}
   - component: {fileID: 5313906316965340920}
-  - component: {fileID: 1805110705813844826}
   m_Layer: 0
   m_Name: Orange (1)
   m_TagString: OrangeCoin
@@ -4629,27 +4807,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1805110705813844826
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7941447645002486670}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7957260176244994104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4661,7 +4818,6 @@ GameObject:
   - component: {fileID: 873391283393307201}
   - component: {fileID: 3176770802467470780}
   - component: {fileID: 6253155340826221973}
-  - component: {fileID: 4756445324100912691}
   m_Layer: 0
   m_Name: Orange (9)
   m_TagString: OrangeCoin
@@ -4734,27 +4890,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4756445324100912691
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7957260176244994104}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.29, z: 4.02}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7985588868011910800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,7 +4901,6 @@ GameObject:
   - component: {fileID: 5314386589404294436}
   - component: {fileID: 5058823119603433443}
   - component: {fileID: 6595275710230631881}
-  - component: {fileID: 5962560365422717276}
   m_Layer: 0
   m_Name: Blue
   m_TagString: BlueCoin
@@ -4839,27 +4973,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5962560365422717276
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7985588868011910800}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.38, y: 4.12, z: 3.04}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8719925249760829104
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,7 +4984,6 @@ GameObject:
   - component: {fileID: 4093962811851925436}
   - component: {fileID: 8563661810341424382}
   - component: {fileID: 7565009919330312404}
-  - component: {fileID: 8393071183790596840}
   m_Layer: 0
   m_Name: Green (7)
   m_TagString: GreenCoin
@@ -4944,27 +5056,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8393071183790596840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8719925249760829104}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8751790343007650039
 GameObject:
   m_ObjectHideFlags: 0
@@ -4976,7 +5067,6 @@ GameObject:
   - component: {fileID: 4289505529830570478}
   - component: {fileID: 3053826363584745126}
   - component: {fileID: 6314765514966715988}
-  - component: {fileID: 9208916929834111049}
   m_Layer: 0
   m_Name: Pink
   m_TagString: PinkCoin
@@ -5049,27 +5139,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &9208916929834111049
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8751790343007650039}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 4.79, z: 3.19}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8942179151874430123
 GameObject:
   m_ObjectHideFlags: 0
@@ -5186,7 +5255,6 @@ GameObject:
   - component: {fileID: 8318284897245175854}
   - component: {fileID: 6065021037937937648}
   - component: {fileID: 8786366635456885796}
-  - component: {fileID: 1306413829915076236}
   m_Layer: 0
   m_Name: Green (8)
   m_TagString: GreenCoin
@@ -5259,24 +5327,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1306413829915076236
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9084415503241410322}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.1, y: 3.92, z: 4.32}
-  m_Center: {x: 0, y: 0, z: 0}
