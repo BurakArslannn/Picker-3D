@@ -23,7 +23,6 @@ namespace RunTime.Managers
 
         private void Start()
         {
-            // UI coin sayısını oyun başında göster
             int totalCoins = SaveManager.LoadTotalCoin();
             UISignals.Instance.onSetTotalCoinCount?.Invoke(totalCoins);
         }

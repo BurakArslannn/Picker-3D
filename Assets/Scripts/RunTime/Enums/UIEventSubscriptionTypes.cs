@@ -4,6 +4,8 @@ namespace RunTime.Enums
     {
         OnPlay,
         OnNextLevel,
-        OnRestartLevel
+        OnRestartLevel,
+        OnOpenStorePanel,
+        OnTurnStartPanel
     }
 }

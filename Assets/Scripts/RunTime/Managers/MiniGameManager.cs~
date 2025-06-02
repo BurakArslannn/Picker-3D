@@ -27,13 +27,7 @@ namespace RunTime.Managers
             int totalCoins = SaveManager.LoadTotalCoin();
             UISignals.Instance.onSetTotalCoinCount?.Invoke(totalCoins);
         }
-
-        [Button]
-        private void ResetCoin()
-        {
-            SaveManager.ResetCoinValue();
-        }
-
+        
         private void OnEnable()
         {
             SubscribeEvents();

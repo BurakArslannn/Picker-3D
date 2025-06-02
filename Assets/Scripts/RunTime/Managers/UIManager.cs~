@@ -1,6 +1,5 @@
 using RunTime.Enums;
 using RunTime.Signals;
-using StylizedWater2;
 using UnityEngine;
 
 namespace Runtime.Managers
@@ -51,6 +50,17 @@ namespace Runtime.Managers
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Fail, 2);
         }
 
+        public void OpenStorePanel()
+        {
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Store, 2);
+        }
+
+        public void TurnOnMenu()
+        {
+            CoreUISignals.Instance.onClosePanel?.Invoke(2);
+        }
+
+
         public void NextLevel()
         {
             CoreGameSignals.Instance.onNextLevel?.Invoke();
@@ -63,6 +73,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onReset?.Invoke();
         }
 
+
         public void Play()
         {
             UISignals.Instance.onPlay?.Invoke();
@@ -74,7 +85,6 @@ namespace Runtime.Managers
         private void OnStageAreaSuccessful(byte stageValue)
         {
             UISignals.Instance.onSetStageColor?.Invoke(stageValue);
-            UISignals.Instance.onSetScore?.Invoke(stageValue);
         }
 
         private void OnReset()

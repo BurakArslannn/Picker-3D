@@ -5,6 +5,7 @@ namespace RunTime.Enums
         Start,
         Level,
         Win,
-        Fail
+        Fail,
+        Store
     }
 }

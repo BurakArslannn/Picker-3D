@@ -1,0 +1,18 @@
+using RunTime.Signals;
+using UnityEngine;
+
+namespace RunTime.Controllers.UI
+{
+    public class StorePanelController : MonoBehaviour
+    {
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void SubscribeEvents()
+        {
+            UISignals.Instance.onOpenStorePanel += OnOpenStorePanel;
+        }
+    }
+}

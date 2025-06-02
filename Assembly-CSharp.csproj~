@@ -66,7 +66,6 @@
     <Compile Include="Assets\Scripts\RunTime\Commands\Level\OnLevelDestroyerCommand.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\UIManager.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\PEButtonScript.cs" />
-    <Compile Include="Assets\Scripts\RunTime\Managers\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Handlers\UIEventSubscriber.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\TotalCoinsPanelController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Enums\GameStates.cs" />
@@ -95,6 +94,7 @@
     <Compile Include="Assets\Scripts\RunTime\Signals\CameraSignals.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKMeshUtility\MKMeshUtility.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\InputData.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\UI\StorePanelController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Extentions\LockCinemachineAxis.cs" />
     <Compile Include="Assets\TempAssets\BTM_Assets\BTM_Items_Gems\Scripts\SimpleGemsAnim.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerMeshController.cs" />

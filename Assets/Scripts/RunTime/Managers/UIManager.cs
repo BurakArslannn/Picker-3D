@@ -1,6 +1,6 @@
 using RunTime.Enums;
+using RunTime.Managers;
 using RunTime.Signals;
-using StylizedWater2;
 using UnityEngine;
 
 namespace Runtime.Managers
@@ -51,6 +51,18 @@ namespace Runtime.Managers
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Fail, 2);
         }
 
+        public void OpenStorePanel()
+        {
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Store, 2);
+            UISignals.Instance.onSetTotalCoinCount?.Invoke(SaveManager.LoadTotalCoin());
+        }
+
+        public void TurnOnMenu()
+        {
+            CoreUISignals.Instance.onClosePanel?.Invoke(2);
+        }
+
+
         public void NextLevel()
         {
             CoreGameSignals.Instance.onNextLevel?.Invoke();
@@ -62,6 +74,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onRestartLevel?.Invoke();
             CoreGameSignals.Instance.onReset?.Invoke();
         }
+
 
         public void Play()
         {

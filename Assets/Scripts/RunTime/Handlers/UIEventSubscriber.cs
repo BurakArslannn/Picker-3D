@@ -59,6 +59,16 @@ namespace Runtime.Handlers
                     button.onClick.AddListener(_manager.RestartLevel);
                     break;
                 }
+                case UIEventSubscriptionTypes.OnOpenStorePanel:
+                {
+                    button.onClick.AddListener(_manager.OpenStorePanel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnStartPanel:
+                {
+                    button.onClick.AddListener(_manager.TurnOnMenu);
+                    break;
+                }
             }
         }
 
@@ -79,6 +89,16 @@ namespace Runtime.Handlers
                 case UIEventSubscriptionTypes.OnRestartLevel:
                 {
                     button.onClick.RemoveListener(_manager.RestartLevel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnOpenStorePanel:
+                {
+                    button.onClick.AddListener(_manager.OpenStorePanel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnStartPanel:
+                {
+                    button.onClick.AddListener(_manager.TurnOnMenu);
                     break;
                 }
             }
