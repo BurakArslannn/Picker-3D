@@ -47,6 +47,19 @@ namespace RunTime.Managers
             return LoadData().lastLevelIndex;
         }
 
+        public static void SaveCurrentSkin(int skinIndex)
+        {
+            SaveData data = LoadData();
+            data.openedPickerCostumeIndex = skinIndex;
+            SaveData(data);
+        }
+
+        public static byte LoadCurrentSkin()
+        {
+            return (byte)LoadData().openedPickerCostumeIndex;
+        }
+
+
         public static bool HasSaveData()
         {
             return File.Exists(SavePath);
@@ -57,13 +70,21 @@ namespace RunTime.Managers
             if (File.Exists(SavePath))
                 File.Delete(SavePath);
         }
-        
+
         public static void ResetCoinValue()
         {
             SaveData data = LoadData();
             data.coinCount = 0;
             SaveData(data);
             Debug.Log("Coin progress resetlendi.");
+        }
+
+        public static void ResetSkinIndexValue()
+        {
+            SaveData data = LoadData();
+            data.openedPickerCostumeIndex = 0;
+            SaveData(data);
+            Debug.Log("Skin progress resetlendi.");
         }
     }
 }

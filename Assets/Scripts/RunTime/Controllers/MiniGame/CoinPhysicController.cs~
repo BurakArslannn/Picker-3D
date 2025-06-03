@@ -45,7 +45,7 @@ namespace RunTime.Controllers.MiniGame
         {
             int addCoin = 0;
 
-            if (other.CompareTag(_greenCoin)) addCoin = 100;
+            if (other.CompareTag(_greenCoin)) addCoin = 10000;
             else if (other.CompareTag(_blueCoin)) addCoin = 400;
             else if (other.CompareTag(_pinkCoin)) addCoin = 300;
             else if (other.CompareTag(_orangeCoin)) addCoin = 200;
@@ -56,7 +56,7 @@ namespace RunTime.Controllers.MiniGame
 
             SaveManager.SaveTotalCoin(_newTotal);
 
-            UISignals.Instance.onSetMiniGameCoinCount?.Invoke(_currentCoins);
+            UISignals.Instance.onSetMiniGameCoinCount?.Invoke(addCoin);
         }
     }
 }

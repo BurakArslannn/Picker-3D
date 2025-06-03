@@ -55,6 +55,7 @@ namespace Runtime.Managers
         {
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Store, 2);
             UISignals.Instance.onSetTotalCoinCount?.Invoke(SaveManager.LoadTotalCoin());
+            
         }
 
         public void TurnOnMenu()
@@ -62,6 +63,10 @@ namespace Runtime.Managers
             CoreUISignals.Instance.onClosePanel?.Invoke(2);
         }
 
+        public void ChooseRandomSkin()
+        {
+            UISignals.Instance.onOpenSkin?.Invoke();
+        }
 
         public void NextLevel()
         {

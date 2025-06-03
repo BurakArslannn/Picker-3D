@@ -11,5 +11,6 @@ namespace RunTime.Signals
         public UnityAction<byte> onSetScore = delegate { };
         public UnityAction<int> onSetMiniGameCoinCount = delegate { };
         public UnityAction<int> onSetTotalCoinCount = delegate { };
+        public UnityAction onOpenSkin = delegate { };
     }
 }

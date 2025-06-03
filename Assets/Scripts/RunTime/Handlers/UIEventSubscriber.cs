@@ -69,6 +69,11 @@ namespace Runtime.Handlers
                     button.onClick.AddListener(_manager.TurnOnMenu);
                     break;
                 }
+                case UIEventSubscriptionTypes.OnChooseRandomSkin:
+                {
+                    button.onClick.AddListener(_manager.ChooseRandomSkin);
+                    break;
+                }
             }
         }
 
@@ -99,6 +104,11 @@ namespace Runtime.Handlers
                 case UIEventSubscriptionTypes.OnTurnStartPanel:
                 {
                     button.onClick.AddListener(_manager.TurnOnMenu);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnChooseRandomSkin:
+                {
+                    button.onClick.AddListener(_manager.ChooseRandomSkin);
                     break;
                 }
             }

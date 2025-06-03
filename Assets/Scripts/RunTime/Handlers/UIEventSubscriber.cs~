@@ -59,16 +59,16 @@ namespace Runtime.Handlers
                     button.onClick.AddListener(_manager.RestartLevel);
                     break;
                 }
-                // case UIEventSubscriptionTypes.OnOpenStorePanel:
-                // {
-                //     button.onClick.AddListener(_manager.OpenStorePanel);
-                //     break;
-                // }
-                // case UIEventSubscriptionTypes.OnTurnStartPanel:
-                // {
-                //     button.onClick.AddListener(_manager.TurnOnMenu);
-                //     break;
-                // }
+                case UIEventSubscriptionTypes.OnOpenStorePanel:
+                {
+                    button.onClick.AddListener(_manager.OpenStorePanel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnStartPanel:
+                {
+                    button.onClick.AddListener(_manager.TurnOnMenu);
+                    break;
+                }
             }
         }
 
@@ -91,22 +91,26 @@ namespace Runtime.Handlers
                     button.onClick.RemoveListener(_manager.RestartLevel);
                     break;
                 }
-                // case UIEventSubscriptionTypes.OnOpenStorePanel:
-                // {
-                //     button.onClick.AddListener(_manager.OpenStorePanel);
-                //     break;
-                // }
-                // case UIEventSubscriptionTypes.OnTurnStartPanel:
-                // {
-                //     button.onClick.AddListener(_manager.TurnOnMenu);
-                //     break;
-                // }
+                case UIEventSubscriptionTypes.OnOpenStorePanel:
+                {
+                    button.onClick.AddListener(_manager.OpenStorePanel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnStartPanel:
+                {
+                    button.onClick.AddListener(_manager.TurnOnMenu);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnChooseRandomSkin:
+                {
+                    button.onClick.AddListener(_manager.);
+                    break;
+                }
+            }
+
+            private void OnDisable()
+            {
+                UnsubscribeEvents();
             }
         }
-
-        private void OnDisable()
-        {
-            UnsubscribeEvents();
-        }
     }
-}

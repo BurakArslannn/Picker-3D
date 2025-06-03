@@ -7,5 +7,6 @@ namespace RunTime.Data.SaveData
     {
         public byte lastLevelIndex;
         public int coinCount;
+        public int openedPickerCostumeIndex;
     }
 }
