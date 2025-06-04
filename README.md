@@ -11,10 +11,10 @@
 
 ## Features
 
-- 🎮 Addictive gameplay
-- 💰 Development with coin system
-- 🌟 Extra fun with mini game
-- 🔄 Continuing where you left off feature
+- 🎮 Addictive gameplay.
+- 💰 Ability to change costumes with the in-game market.
+- 🌟 Extra fun with mini games.
+- 🔄 Continuing where you left off.
 
 ---
 
