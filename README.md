@@ -1,6 +1,6 @@
 <!-- Oyunun logosu -->
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d1953a7d-1da5-460a-a23a-9a03f1b1d5c2" alt="Oyun Logo" width="300"/>
+  <img src="https://github.com/user-attachments/assets/d1953a7d-1da5-460a-a23a-9a03f1b1d5c2" alt="Oyun Logo" width="200"/>
 </p>
 
 <p align="center">
