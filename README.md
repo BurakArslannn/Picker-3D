@@ -36,5 +36,6 @@
 
 ---
 
-## Kurulum
+## Setup
+https://burak-arslan.itch.io/pickerzone
 
