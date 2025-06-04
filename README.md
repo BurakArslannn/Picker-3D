@@ -54,7 +54,7 @@
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID" target="_blank">
-    <img src="https://youtube.com/shorts/WnD4ZVt3Ptg?feature=share" alt="Gameplay Video" width="640"/>
+    <img src="https://youtube.com/shorts/WnD4ZVt3Ptg?si=0fOyeUc11_rA-BQZ" alt="Gameplay Video" width="640"/>
   </a>
 </p>
 
