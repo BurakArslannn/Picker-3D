@@ -9,7 +9,7 @@
 
 ---
 
-## Özellikler
+## Features
 
 - 🎮 Addictive gameplay
 - 💰 Development with coin system
