@@ -50,17 +50,20 @@
 
 ---
 
+---
+
 ## 🎥 Gameplay
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID" target="_blank">
-    <img src="https://youtube.com/shorts/WnD4ZVt3Ptg?si=0fOyeUc11_rA-BQZ" alt="Gameplay Video" width="640"/>
+  <a href="https://www.youtube.com/watch?v=WnD4ZVt3Ptg" target="_blank">
+    <img src="https://img.youtube.com/vi/WnD4ZVt3Ptg/0.jpg" alt="Gameplay Video" width="640"/>
   </a>
 </p>
 
 <p align="center">
   <i>Click the image to watch the gameplay on YouTube.</i>
 </p>
+
 
 
 ---
