@@ -50,5 +50,20 @@
 
 ---
 
+## 🎥 Gameplay
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID" target="_blank">
+    <img src="https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg" alt="Gameplay Video" width="640"/>
+  </a>
+</p>
+
+<p align="center">
+  <i>Click the image to watch the gameplay on YouTube.</i>
+</p>
+
+
+---
+
 ## Setup
 👉 [Play on Itch.io](https://burak-arslan.itch.io/pickerzone)
