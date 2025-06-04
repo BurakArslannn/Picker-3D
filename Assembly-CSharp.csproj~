@@ -105,7 +105,7 @@
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PlayerData.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectCycler.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\GameManager.cs" />
-    <Compile Include="Assets\Scripts\RunTime\Managers\PlayerCostumeManager.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Managers\SoundManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\UIPanelController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Uniform.cs" />
     <Compile Include="Assets\Scripts\RunTime\Commands\Player\ForceBallsToPoolCommand.cs" />
@@ -166,6 +166,7 @@
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\URP\Standard\StandardPBSOutline.shader" />
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\URP\Standard\StandardSimpleRefraction.shader" />
     <None Include="Assets\TempAssets\Lana Studio\Hyper Casual FX\Demo\Readme.txt" />
+    <None Include="Assets\ArcadeGameBGM#17\ReadMe.txt" />
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\Lib\Meta\Setup.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TempAssets\StylizedWater2\Shaders\Libraries\Caustics.hlsl" />

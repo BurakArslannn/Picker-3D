@@ -8,5 +8,10 @@ namespace RunTime.Enums
         OnOpenStorePanel,
         OnTurnStartPanel,
         OnOpenSkin,
+        OnExitGame,
+        OnOpenSettingsPanel,
+        OnOpenInfoPanel,
+        OnTurnOnMusic,
+        OnTurnOffMusic
     }
 }

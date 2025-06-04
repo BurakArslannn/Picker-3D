@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using DG.Tweening;
+using RunTime.Signals;
+using TMPro;
+using UnityEngine;
+
+namespace RunTime.Controllers.UI
+{
+    public class StageSuccesTextController : MonoBehaviour
+    {
+        [SerializeField] private List<TextMeshProUGUI> successTexts = new List<TextMeshProUGUI>();
+
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void SubscribeEvents()
+        {
+            UISignals.Instance.onShowStageSuccessText += OnShowStageSuccessText;
+        }
+
+        private void OnShowStageSuccessText(byte stageValue)
+        {
+            successTexts[stageValue].gameObject.SetActive(true);
+            successTexts[stageValue].DOFade(1, 4).OnComplete(() => successTexts[stageValue].DOFade(0, 1));
+        }
+
+        private void OnDisable()
+        {
+            UnSubscribeEvents();
+        }
+
+        private void UnSubscribeEvents()
+        {
+            UISignals.Instance.onShowStageSuccessText -= OnShowStageSuccessText;
+        }
+    }
+}

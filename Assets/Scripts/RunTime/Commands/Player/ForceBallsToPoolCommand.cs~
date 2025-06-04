@@ -1,5 +1,5 @@
 using System.Linq;
-using Runtime.Data.ValueObjects;
+using RunTime.Data.ValueObjects;
 using Runtime.Managers;
 using UnityEngine;
 
@@ -8,11 +8,11 @@ namespace Runtime.Commands.Player
     public class ForceBallsToPoolCommand
     {
         private PlayerManager _manager;
-        private PlayerForceData _forceData;
+        private PlayerData.PlayerForceData _forceData;
 
         private readonly string _collectable = "Collectable";
 
-        public ForceBallsToPoolCommand(PlayerManager manager, PlayerForceData forceData)
+        public ForceBallsToPoolCommand(PlayerManager manager, PlayerData.PlayerForceData forceData)
         {
             _manager = manager;
             _forceData = forceData;

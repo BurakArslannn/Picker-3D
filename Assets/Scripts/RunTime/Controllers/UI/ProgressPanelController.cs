@@ -35,12 +35,12 @@ namespace RunTime.Controllers.UI
         {
             if (stageimages == null || stageimages.Count < 6) return;
 
-            TrySetStage(0, scoreValue > 5, Color.red);
-            TrySetStage(1, scoreValue > 10, new Color(1f, 0.5f, 0.5f));
-            TrySetStage(2, scoreValue > 15, new Color(1f, 0.65f, 0f));
-            TrySetStage(3, scoreValue > 20, Color.yellow);
-            TrySetStage(4, scoreValue > 25, new Color(0.56f, 0.93f, 0.56f));
-            TrySetStage(5, scoreValue > 30, new Color(0f, 0.5f, 0f));
+            TrySetStage(0, scoreValue > 15, Color.red);
+            TrySetStage(1, scoreValue > 30, new Color(1f, 0.5f, 0.5f));
+            TrySetStage(2, scoreValue > 45, new Color(1f, 0.65f, 0f));
+            TrySetStage(3, scoreValue > 75, Color.yellow);
+            TrySetStage(4, scoreValue > 95, new Color(0.56f, 0.93f, 0.56f));
+            TrySetStage(5, scoreValue > 100, new Color(0f, 0.5f, 0f));
         }
 
         private void TrySetStage(int index, bool condition, Color targetColor)

@@ -1,5 +1,6 @@
 using RunTime.Enums;
 using Runtime.Managers;
+using RunTime.Managers;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
@@ -74,6 +75,31 @@ namespace Runtime.Handlers
                     button.onClick.AddListener(_manager.OpenPickerCostume);
                     break;
                 }
+                case UIEventSubscriptionTypes.OnExitGame:
+                {
+                    button.onClick.AddListener(_manager.ExitGame);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnOpenSettingsPanel:
+                {
+                    button.onClick.AddListener(_manager.OpenSettings);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnOpenInfoPanel:
+                {
+                    button.onClick.AddListener(_manager.OpenInfoPanel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnOnMusic:
+                {
+                    button.onClick.AddListener(_manager.TurnOnMusic);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnOffMusic:
+                {
+                    button.onClick.AddListener(_manager.TurnOffMusic);
+                    break;
+                }
             }
         }
 
@@ -109,6 +135,31 @@ namespace Runtime.Handlers
                 case UIEventSubscriptionTypes.OnOpenSkin:
                 {
                     button.onClick.AddListener(_manager.OpenPickerCostume);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnExitGame:
+                {
+                    button.onClick.AddListener(_manager.ExitGame);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnOpenSettingsPanel:
+                {
+                    button.onClick.AddListener(_manager.OpenSettings);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnOpenInfoPanel:
+                {
+                    button.onClick.AddListener(_manager.OpenInfoPanel);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnOnMusic:
+                {
+                    button.onClick.AddListener(_manager.TurnOnMusic);
+                    break;
+                }
+                case UIEventSubscriptionTypes.OnTurnOffMusic:
+                {
+                    button.onClick.AddListener(_manager.TurnOffMusic);
                     break;
                 }
             }

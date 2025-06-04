@@ -22,7 +22,7 @@ namespace Runtime.Commands.Player
         {
             var transform1 = _manager.transform;
             var position1 = transform1.position;
-            var forcePos = new Vector3(position1.x, position1.y - 1f, position1.z + .9f);
+            var forcePos = new Vector3(position1.x, position1.y - 1f, position1.z + 2f);
 
             var collider = Physics.OverlapSphere(forcePos, 1.7f);
 

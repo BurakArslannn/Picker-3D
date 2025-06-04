@@ -1,9 +1,59 @@
+using RunTime.Enums;
+using RunTime.Signals;
 using UnityEngine;
 
 namespace RunTime.Managers
 {
     public class GameManager : MonoBehaviour
     {
-        
+        #region Self Variables
+
+        #region Serialized Variables
+
+        //summary:
+        //Game States are not used yet but will be used in the future
+        [SerializeField] private GameStates states;
+
+        #endregion
+
+        #endregion
+
+
+        private void Awake()
+        {
+            Application.targetFrameRate = 60;
+        }
+
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void SubscribeEvents()
+        {
+            CoreGameSignals.Instance.onChangeGameState += OnChangeGameState;
+            UISignals.Instance.onCloseGame += OnChangeGameState;
+        }
+
+        private void OnChangeGameState()
+        {
+            Application.Quit();
+        }
+
+        private void UnsubscribeEvents()
+        {
+            CoreGameSignals.Instance.onChangeGameState -= OnChangeGameState;
+            UISignals.Instance.onCloseGame -= OnChangeGameState;
+        }
+
+        private void OnDisable()
+        {
+            UnsubscribeEvents();
+        }
+
+        private void OnChangeGameState(GameStates state)
+        {
+            states = state;
+        }
     }
 }

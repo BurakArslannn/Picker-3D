@@ -10,6 +10,8 @@ namespace RunTime.Managers
 
         #region Serialized Variables
 
+        //Game States are not used yet but will be used in the future
+
         [SerializeField] private GameStates states;
 
         #endregion
@@ -30,11 +32,18 @@ namespace RunTime.Managers
         private void SubscribeEvents()
         {
             CoreGameSignals.Instance.onChangeGameState += OnChangeGameState;
+            UISignals.Instance.onCloseGame += OnChangeGameState;
+        }
+
+        private void OnChangeGameState()
+        {
+            Application.Quit();
         }
 
         private void UnsubscribeEvents()
         {
             CoreGameSignals.Instance.onChangeGameState -= OnChangeGameState;
+            UISignals.Instance.onCloseGame -= OnChangeGameState;
         }
 
         private void OnDisable()
@@ -42,7 +51,6 @@ namespace RunTime.Managers
             UnsubscribeEvents();
         }
 
-        //[Button("Change State")]
         private void OnChangeGameState(GameStates state)
         {
             states = state;

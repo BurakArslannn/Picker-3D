@@ -100,5 +100,30 @@ namespace Runtime.Managers
             CoreUISignals.Instance.onCloseAllPanels?.Invoke();
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1);
         }
+
+        public void ExitGame()
+        {
+            UISignals.Instance.onCloseGame?.Invoke();
+        }
+
+        public void OpenSettings()
+        {
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Settings, 2);
+        }
+
+        public void TurnOnMusic()
+        {
+            CoreGameSignals.Instance.onTurnOnSound?.Invoke();
+        }
+
+        public void TurnOffMusic()
+        {
+            CoreGameSignals.Instance.onTurnOffSound?.Invoke();
+        }
+
+        public void OpenInfoPanel()
+        {
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Info, 2);
+        }
     }
 }

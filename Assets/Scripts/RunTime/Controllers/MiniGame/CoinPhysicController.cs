@@ -45,10 +45,10 @@ namespace RunTime.Controllers.MiniGame
         {
             int addCoin = 0;
 
-            if (other.CompareTag(_greenCoin)) addCoin = 10000;
-            else if (other.CompareTag(_blueCoin)) addCoin = 40000;
-            else if (other.CompareTag(_pinkCoin)) addCoin = 30000;
-            else if (other.CompareTag(_orangeCoin)) addCoin = 20000;
+            if (other.CompareTag(_greenCoin)) addCoin = 200;
+            else if (other.CompareTag(_blueCoin)) addCoin = 400;
+            else if (other.CompareTag(_pinkCoin)) addCoin = 600;
+            else if (other.CompareTag(_orangeCoin)) addCoin = 1000;
             else return;
 
             _currentCoins = SaveManager.LoadTotalCoin();

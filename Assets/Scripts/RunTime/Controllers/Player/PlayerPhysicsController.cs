@@ -41,6 +41,7 @@ namespace RunTime.Controllers.Player
                     {
                         CoreGameSignals.Instance.onStageAreaSuccessful?.Invoke(manager.StageValue);
                         InputSignals.Instance.onEnableInput?.Invoke();
+                        UISignals.Instance.onShowStageSuccessText?.Invoke(manager.StageValue);
                     }
                     else
                     {
