@@ -59,6 +59,18 @@ namespace RunTime.Managers
             return (byte)LoadData().openedPickerCostumeIndex;
         }
 
+        public static void SaveChoosenSkinIndex(int skinIndex)
+        {
+            SaveData data = LoadData();
+            data.chosenSkinIndex = skinIndex;
+            SaveData(data);
+        }
+
+        public static byte LoadChoosenSkinIndex()
+        {
+            return (byte)LoadData().chosenSkinIndex;
+        }
+
 
         public static bool HasSaveData()
         {
@@ -83,6 +95,14 @@ namespace RunTime.Managers
         {
             SaveData data = LoadData();
             data.openedPickerCostumeIndex = 0;
+            SaveData(data);
+            Debug.Log("Skin progress resetlendi.");
+        }
+
+        public static void ResetChosenSkinIndex()
+        {
+            SaveData data = LoadData();
+            data.chosenSkinIndex = 0;
             SaveData(data);
             Debug.Log("Skin progress resetlendi.");
         }

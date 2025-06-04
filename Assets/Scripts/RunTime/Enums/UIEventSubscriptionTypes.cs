@@ -7,6 +7,6 @@ namespace RunTime.Enums
         OnRestartLevel,
         OnOpenStorePanel,
         OnTurnStartPanel,
-        OnChooseRandomSkin
+        OnOpenSkin,
     }
 }

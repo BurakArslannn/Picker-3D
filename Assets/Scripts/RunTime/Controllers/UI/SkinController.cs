@@ -1,0 +1,180 @@
+using System.Collections.Generic;
+using DG.Tweening;
+using RunTime.Managers;
+using RunTime.Signals;
+using Sirenix.OdinInspector;
+using TMPro;
+using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
+
+namespace RunTime.Controllers.UI
+{
+    public class SkinController : MonoBehaviour
+    {
+        #region Self Variables
+
+        #region Serialized Variables
+
+        [SerializeField] private List<Button> pickerSkins = new List<Button>();
+        [SerializeField] private TextMeshProUGUI selectedText;
+        [SerializeField] private TextMeshProUGUI congratsText;
+
+        #endregion
+
+        #region Private Variables
+
+        private int _totalCoins;
+        private const int RandomSkinCost = 500;
+
+        #endregion
+
+        #endregion
+
+        private void Awake()
+        {
+            _totalCoins = SaveManager.LoadTotalCoin();
+            ShowOpenedSkins();
+        }
+
+        private void ShowOpenedSkins()
+        {
+            int openedSkinCount = SaveManager.LoadCurrentSkin();
+
+            for (int i = 0; i < pickerSkins.Count; i++)
+            {
+                var button = pickerSkins[i];
+                bool isUnlocked = i < openedSkinCount;
+
+                button.gameObject.SetActive(isUnlocked);
+                button.interactable = isUnlocked;
+
+                Transform skinTransform = button.transform;
+                Transform closedImage = skinTransform.GetChild(0);
+                Transform openImage = skinTransform.GetChild(1);
+
+                closedImage.gameObject.SetActive(true);
+                openImage.gameObject.SetActive(false);
+
+                int index = i;
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(() => OnSkinButtonClicked(index));
+            }
+
+            if (selectedText != null)
+            {
+                selectedText.gameObject.SetActive(false);
+            }
+        }
+
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void SubscribeEvents()
+        {
+            UISignals.Instance.onOpenSkin += OnOpenRandomSkin;
+        }
+
+        private void OnOpenRandomSkin()
+        {
+            var currentSkinIndex = SaveManager.LoadCurrentSkin();
+
+            if (currentSkinIndex >= pickerSkins.Count)
+            {
+                congratsText.text = $"Awesome!! You have opened all the skins.";
+
+                congratsText.gameObject.SetActive(true);
+                congratsText.DOFade(1f, 0f);
+                congratsText.DOFade(0f, 1f).SetDelay(1.5f);
+                return;
+            }
+
+            if (_totalCoins >= RandomSkinCost)
+            {
+                var button = pickerSkins[currentSkinIndex];
+                button.gameObject.SetActive(true);
+                button.interactable = true;
+
+                Transform skinTransform = button.transform;
+                Transform closedImage = skinTransform.GetChild(0);
+                Transform openImage = skinTransform.GetChild(1);
+
+                closedImage.gameObject.SetActive(false);
+                openImage.gameObject.SetActive(true);
+
+                RectTransform openRect = openImage.GetComponent<RectTransform>();
+                Sequence seq = DOTween.Sequence();
+
+                seq.Append(openRect.DOShakeAnchorPos(1.5f, new Vector2(10f, 0f), 10, 90))
+                    .Join(openRect.DOScale(1.2f, 0.2f).SetLoops(2, LoopType.Yoyo))
+                    .AppendCallback(() =>
+                    {
+                        closedImage.gameObject.SetActive(true);
+                        openImage.gameObject.SetActive(false);
+                    });
+
+                RectTransform buttonRect = button.GetComponent<RectTransform>();
+                Image buttonImg = button.GetComponent<Image>();
+
+                seq.Join(buttonRect.DOScale(1.3f, 0.3f).SetLoops(2, LoopType.Yoyo))
+                    .Join(buttonImg.DOColor(Color.yellow, 0.3f).SetLoops(2, LoopType.Yoyo))
+                    .OnComplete(() =>
+                    {
+                        buttonRect.localScale = Vector3.one;
+                        buttonImg.color = Color.white;
+                    });
+
+                int index = currentSkinIndex;
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(() => OnSkinButtonClicked(index));
+
+                _totalCoins -= RandomSkinCost;
+                SaveManager.SaveTotalCoin(_totalCoins);
+                UISignals.Instance.onSetTotalCoinCount?.Invoke(_totalCoins);
+
+                SaveManager.SaveCurrentSkin(currentSkinIndex + 1);
+            }
+            else
+            {
+                Debug.Log("There is not enough coins.");
+            }
+        }
+
+
+        private void OnSkinButtonClicked(int index)
+        {
+            if (selectedText != null)
+            {
+                selectedText.text = $"Selected Skin {index + 1}";
+                selectedText.gameObject.SetActive(true);
+
+                selectedText.DOFade(1f, 0f);
+                selectedText.DOFade(0f, 1f).SetDelay(1.5f);
+            }
+        }
+
+        private void OnDisable()
+        {
+            UnSubscribeEvents();
+        }
+
+        private void UnSubscribeEvents()
+        {
+            UISignals.Instance.onOpenSkin -= OnOpenRandomSkin;
+        }
+
+        [Button]
+        private void ResetIndex()
+        {
+            SaveManager.ResetSkinIndexValue();
+        }
+        
+        public void OnClickSelectCostume(int index)
+        {
+            Debug.Log("Choosen costume: " + index);
+            CoreGameSignals.Instance.onSetSelectedCostume?.Invoke(index);
+        }
+    }
+}

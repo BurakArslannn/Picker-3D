@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TempAssets\_MK\MKRampCreator\MKRampCreator.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\UI\SkinController.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Scripts\ETFXRotation.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\MiniGame\CoinPhysicController.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\TempAssets\Plawius-NonConvexCollider\API\NonConvexColliderAPI.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Level.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Common.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Controllers\Player\PlayerCostumeController.cs" />
     <Compile Include="Assets\Scripts\RunTime\Data\UnityObjects\CD_Inventory.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\VFX Library\UICanvasManager.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXFireProjectile.cs" />
@@ -103,6 +105,7 @@
     <Compile Include="Assets\Scripts\RunTime\Data\ValueObjects\PlayerData.cs" />
     <Compile Include="Assets\TempAssets\Epic Toon FX\Demo\Scripts\ETFXEffectCycler.cs" />
     <Compile Include="Assets\Scripts\RunTime\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\RunTime\Managers\PlayerCostumeManager.cs" />
     <Compile Include="Assets\Scripts\RunTime\Controllers\UI\UIPanelController.cs" />
     <Compile Include="Assets\TempAssets\_MK\MKToon\Scripts\Uniform.cs" />
     <Compile Include="Assets\Scripts\RunTime\Commands\Player\ForceBallsToPoolCommand.cs" />
@@ -162,6 +165,7 @@
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\URP\Particles\ParticlesPBSRefraction.shader" />
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\URP\Standard\StandardPBSOutline.shader" />
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\URP\Standard\StandardSimpleRefraction.shader" />
+    <None Include="Assets\TempAssets\Lana Studio\Hyper Casual FX\Demo\Readme.txt" />
     <None Include="Assets\TempAssets\_MK\MKToon\Shader\Lib\Meta\Setup.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TempAssets\StylizedWater2\Shaders\Libraries\Caustics.hlsl" />

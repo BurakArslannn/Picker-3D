@@ -24,5 +24,6 @@ namespace RunTime.Signals
         public UnityAction onFinishAreaEntered = delegate { };
         public UnityAction onMiniGameAreaEntered = delegate { }; //Speed Up
         public UnityAction onMinigameCompleted = delegate { }; //Get Coin and Save
+        public UnityAction<int> onSetSelectedCostume = delegate { };
     }
 }

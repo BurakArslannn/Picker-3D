@@ -69,9 +69,9 @@ namespace Runtime.Handlers
                     button.onClick.AddListener(_manager.TurnOnMenu);
                     break;
                 }
-                case UIEventSubscriptionTypes.OnChooseRandomSkin:
+                case UIEventSubscriptionTypes.OnOpenSkin:
                 {
-                    button.onClick.AddListener(_manager.ChooseRandomSkin);
+                    button.onClick.AddListener(_manager.OpenPickerCostume);
                     break;
                 }
             }
@@ -106,9 +106,9 @@ namespace Runtime.Handlers
                     button.onClick.AddListener(_manager.TurnOnMenu);
                     break;
                 }
-                case UIEventSubscriptionTypes.OnChooseRandomSkin:
+                case UIEventSubscriptionTypes.OnOpenSkin:
                 {
-                    button.onClick.AddListener(_manager.ChooseRandomSkin);
+                    button.onClick.AddListener(_manager.OpenPickerCostume);
                     break;
                 }
             }

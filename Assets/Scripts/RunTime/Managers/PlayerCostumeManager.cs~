@@ -1,0 +1,14 @@
+using RunTime.Signals;
+using UnityEngine;
+
+namespace RunTime.Managers
+{
+    public class PlayerCostumeManager : MonoBehaviour
+    {
+        public void OnClickSelectCostume(int index)
+        {
+            Debug.Log("Seçilen kostüm indexi: " + index);
+            CoreGameSignals.Instance.onSetSelectedCostume?.Invoke(index);
+        }
+    }
+}

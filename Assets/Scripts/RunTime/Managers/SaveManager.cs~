@@ -56,7 +56,19 @@ namespace RunTime.Managers
 
         public static byte LoadCurrentSkin()
         {
-            return LoadData().openedPickerCostumeIndex;
+            return (byte)LoadData().openedPickerCostumeIndex;
+        }
+
+        public static void SaveChoosenSkinIndex(int skinIndex)
+        {
+            SaveData data = LoadData();
+            data.chosenSkinIndex = skinIndex;
+            SaveData(data);
+        }
+
+        public static byte LoadChoosenSkinIndex()
+        {
+            return (byte)LoadData().chosenSkinIndex;
         }
 
 

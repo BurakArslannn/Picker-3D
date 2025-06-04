@@ -2,6 +2,7 @@ using RunTime.Enums;
 using RunTime.Managers;
 using RunTime.Signals;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Runtime.Managers
 {
@@ -55,7 +56,6 @@ namespace Runtime.Managers
         {
             CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Store, 2);
             UISignals.Instance.onSetTotalCoinCount?.Invoke(SaveManager.LoadTotalCoin());
-            
         }
 
         public void TurnOnMenu()
@@ -63,10 +63,11 @@ namespace Runtime.Managers
             CoreUISignals.Instance.onClosePanel?.Invoke(2);
         }
 
-        public void ChooseRandomSkin()
+        public void OpenPickerCostume()
         {
             UISignals.Instance.onOpenSkin?.Invoke();
         }
+
 
         public void NextLevel()
         {
