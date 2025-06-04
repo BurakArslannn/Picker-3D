@@ -4,22 +4,22 @@
 </p>
 
 <p align="center">
-  <b>Harika bir oyun deneyimi sunan, eğlenceli ve bağımlılık yaratan bir oyun!</b>
+  <b>A fun and addictive game that offers a great gaming experience!</b>
 </p>
 
 ---
 
 ## Özellikler
 
-- 🎮 Bağımlılık yapan oynanış
-- 💰 Coin sistemi ile gelişim
-- 🌟 Mini oyunlar ile ekstra eğlence
-- 🔄 Kaldığın yerden devam etme özelliği
+- 🎮 Addictive gameplay
+- 💰 Development with coin system
+- 🌟 Extra fun with mini game
+- 🔄 Continuing where you left off feature
 
 ---
 
 <details>
-  <summary><b>📷 Ekran Görüntüleri</b></summary>
+  <summary><b>📷 Screenshots</b></summary>
 
   <p align="center">
     <img src="https://github.com/user-attachments/assets/cf170980-f1be-4828-a85e-5c8e22b48752" alt="Ekran Görüntüsü 1" width="300"/>
@@ -38,5 +38,3 @@
 
 ## Kurulum
 
-```bash
-git clone https://github.com/kullaniciadi/proje-adi.git
