@@ -54,15 +54,21 @@
 
 ## 🎥 Gameplay
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=WnD4ZVt3Ptg" target="_blank">
-    <img src="https://img.youtube.com/vi/WnD4ZVt3Ptg/0.jpg" alt="Gameplay Video" width="640"/>
-  </a>
-</p>
+<details>
+  <summary><b>▶ Click to watch gameplay</b></summary>
 
-<p align="center">
-  <i>Click the image to watch the gameplay on YouTube.</i>
-</p>
+  <p align="center">
+    <a href="https://www.youtube.com/watch?v=WnD4ZVt3Ptg" target="_blank">
+      <img src="https://img.youtube.com/vi/WnD4ZVt3Ptg/0.jpg" alt="Gameplay Video" width="640"/>
+    </a>
+  </p>
+
+  <p align="center">
+    <i>Click the image to watch the gameplay on YouTube.</i>
+  </p>
+
+</details>
+
 
 
 
